@@ -14,7 +14,8 @@ function FormLogin() {
 
 
 
-  //se obtiene la lista de usuarios desde el db.json por el getUser y se almacena en el estado users.
+  //se obtiene la lista de usuarios desde el db.json por el getUser y se almacena en el estado users.\
+
   useEffect(() => {
     const fetchUsers = async () => {
       try {
