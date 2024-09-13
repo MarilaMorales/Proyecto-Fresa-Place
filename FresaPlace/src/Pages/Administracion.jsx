@@ -1,5 +1,7 @@
 import React from 'react'
 import NavBarInc from '../Componentes/NavBar'
+import Header from '../Componentes/Header'
+
 
 
 
@@ -8,6 +10,7 @@ import NavBarInc from '../Componentes/NavBar'
 function Administracion() {
   return (
     <div>
+      <Header />
       <NavBarInc />
     </div>
   )

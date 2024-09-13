@@ -1,0 +1,19 @@
+/* NavBar.css */
+.bg-body-tertiary {
+    background-color: #e1d7e9;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center; 
+    width: 100%; 
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0 15px;
+  }
+  
+  .navbar-brand {
+    margin-right: auto; 
+  }
+  
