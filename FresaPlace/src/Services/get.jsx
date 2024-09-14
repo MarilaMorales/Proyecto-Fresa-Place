@@ -21,11 +21,11 @@ export async function getUsers() {
 
 
 
-export const getTareas = async () => {
+export const getProductos = async () => {
     try {
-        const response = await fetch('http://localhost:3001/tareas');
+        const response = await fetch('http://localhost:3000/productos');
         if (!response.ok) {
-            throw new Error("Error al obtener tareas");
+            throw new Error("Error al obtener productos");
         }
         return await response.json();
     } catch (error) {

@@ -29,36 +29,6 @@
       "password": "1314"
     },
     {
-      "id": "d988",
-      "nombre": "sheyris",
-      "correo": "sheyris@gmail.com",
-      "password": "1314"
-    },
-    {
-      "id": "22d8",
-      "nombre": {
-        "username": "toto morales",
-        "email": "toto@gmail.com",
-        "password": "1234"
-      }
-    },
-    {
-      "id": "4400",
-      "nombre": {
-        "nombre": "xinia",
-        "correo": "xinia@gmail.com",
-        "password": "1234"
-      }
-    },
-    {
-      "id": "6628",
-      "nombre": {
-        "nombre": "adriana",
-        "correo": "adriana@gmail.com",
-        "password": "1234"
-      }
-    },
-    {
       "id": "7969",
       "nombre": {
         "nombre": "adriana",
@@ -75,46 +45,28 @@
       }
     }
   ],
-  "tareas": [
+  "productos": [
     {
-      "id": "1d72",
-      "tarea": "Barrer",
-      "prioridad": "Low"
+      "id": "5ce3",
+      "nombre": "Piñata",
+      "descripcion": "fiesta infantil",
+      "tags": "fiesta",
+      "imagen": "trodgh"
     },
     {
-      "id": "2360",
-      "tarea": "Estresarse por el Projecto",
-      "prioridad": "High"
+      "id": "a8e1",
+      "nombre": "Piñata",
+      "descripcion": "Piñata niño",
+      "tags": "fiesta",
+      "imagen": "pino"
     },
     {
-      "id": "19b9",
-      "tarea": "Esto no sirve",
-      "prioridad": "Medium"
-    },
-    {
-      "id": "d5fe",
-      "tarea": "Digamos que ya sirve bien",
-      "prioridad": "Medium"
-    },
-    {
-      "id": "00ac",
-      "tarea": "sigue sin servir bien",
-      "prioridad": "Low"
-    },
-    {
-      "id": "8a5f",
-      "tarea": "no edita",
-      "prioridad": "Medium"
-    },
-    {
-      "id": "5788",
-      "tarea": "Comprar Helados",
-      "prioridad": "High"
-    },
-    {
-      "id": "4983",
-      "tarea": "Bajo la luz",
-      "prioridad": "Medium"
+      "id": "851b",
+      "nombre": "Farol",
+      "descripcion": "Farol de la Independencia",
+      "tags": "Escolar",
+      "imagen": "Dedoasjdn"
     }
-  ]
+  ],
+  "imagen": []
 }

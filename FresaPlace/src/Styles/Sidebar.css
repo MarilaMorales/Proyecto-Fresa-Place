@@ -1,0 +1,13 @@
+.flex-column{
+    background-color: rgb(231, 17, 149);
+    width: 13%;
+    /* height: 35.9rem; */
+    height: 100vh;
+
+    
+}
+
+#linkAdmin{
+    color: rgb(168, 223, 223);
+    margin-top: 1rem;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBarInc from '../Componentes/NavBar'
-import Header from '../Componentes/Header'
+import SideBar from '../Componentes/SideBar'
+import FormAdmin from '../Componentes/FormAdmin'
 
 
 
@@ -10,8 +11,9 @@ import Header from '../Componentes/Header'
 function Administracion() {
   return (
     <div>
-      <Header />
       <NavBarInc />
+      <SideBar />
+      <FormAdmin />
     </div>
   )
 }

@@ -26,17 +26,17 @@ async function postUser(nombre, correo, password) {
 }
 
 
-export const postTareas = async (tarea) => {
+export const postProductos = async (productos) => {
     try {
-        const response = await fetch('http://localhost:3001/tareas', {
+        const response = await fetch('http://localhost:3000/productos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(tarea),
+            body: JSON.stringify(productos),
         });
         if (!response.ok) {
-            throw new Error('Error al agregar tarea');
+            throw new Error('Error al agregar Productos ');
         }
         return await response.json();
     } catch (error) {
@@ -46,34 +46,6 @@ export const postTareas = async (tarea) => {
 };
 
 
-// async function postTareas(tarea, tareaInput, prioridades) {
-//     try {
-//         let Tasks = {
-//             tarea, 
-//             tareaInput, 
-//             prioridades
-//         };
 
-
-//         let response = await fetch('http://localhost:3001/tareas', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify(Tasks)
-//         });
-
-//         if (!response.ok) {
-//             throw new Error('No se pudo guardar el usuario');
-//         }
-
-//         let dataTareas = await response.json();
-//         console.log('permiso guardado con éxito:', Tasks);
-//         return dataTareas;
-
-//     } catch (error) {
-//         console.error('No se pudo guardar los permisos', error);
-//     }
-// }
 
 export {postUser}
