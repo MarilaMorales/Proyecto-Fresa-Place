@@ -5,6 +5,10 @@ import { useNavigate } from "react-router-dom";
 import "../Styles/Login.css";
 
 
+
+
+
+
 function FormLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -14,8 +18,8 @@ function FormLogin() {
 
 
 
-  //se obtiene la lista de usuarios desde el db.json por el getUser y se almacena en el estado users.\
 
+  // Obtiene la lista de usuarios desde el db.json por el getUser y la almacena en el estado users.
   useEffect(() => {
     const fetchUsers = async () => {
       try {
@@ -29,6 +33,9 @@ function FormLogin() {
     fetchUsers();
   }, []);
 
+
+
+  
   const Login = async () => {
     setMessage('');
 
@@ -38,13 +45,21 @@ function FormLogin() {
     }
 
     try {
-      const user = users.find(u => u.correo === email); //Se busca en users el usuario cuyo correo coincida con el ingresado 
+      // Verifica si el correo y la contraseña coinciden con los de un administrador
+      if (email === 'juliana@gmail.com' && password === '2626') {
+        localStorage.setItem('Autentificado', 'true');
+        setMessage('¡Éxito! Usuario entrando.');
+        navigate("/Administracion");
+        return; // Salir de la función después de redirigir
+      }
 
+      // Verifica si el usuario existe en la lista y si la contraseña es correcta
+      const user = users.find(u => u.correo === email);
       if (user) {
-        if (user.password === password) { // Compara la contraseña ingresada con la almacenada en el usuario
+        if (user.password === password) {
           localStorage.setItem('Autentificado', 'true');
           setMessage('¡Éxito! Usuario entrando.');
-          navigate("/tareas");
+          navigate("/Principal");
         } else {
           setMessage('Contraseña incorrecta.');
         }
@@ -127,4 +142,3 @@ function FormLogin() {
 }
 
 export default FormLogin;
-

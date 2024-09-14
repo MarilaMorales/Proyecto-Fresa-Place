@@ -5,15 +5,19 @@
   
   .navbar-nav {
     flex-direction: row;
-    justify-content: center; 
-    width: 100%; 
+    justify-content: space-around; /* Espacia los elementos de manera uniforme */
+    width: 100%; /* Asegura que el Nav ocupe el ancho completo */
   }
   
   .navbar-nav .nav-link {
-    padding: 0 15px;
+    margin: 0 20px; /* Espaciado horizontal entre los enlaces */
+  }
+  
+  .navbar-nav .nav-dropdown {
+    margin: 0 20px; /* Espaciado horizontal entre los dropdowns y los enlaces */
   }
   
   .navbar-brand {
-    margin-right: auto; 
+    margin-right: auto; /* Alinea el logo a la izquierda */
   }
   

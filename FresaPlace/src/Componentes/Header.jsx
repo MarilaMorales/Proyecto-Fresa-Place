@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react';
 import "../Styles/Header.css";
 
 const Header = () => {
-  const [message, setMessage] = useState("BIENVENIDOS A FRESA PLACE");
+  const [message, setMessage] = useState("Bienvenidos a Fresa Place"); //Usar una de las frases de inicio
 
   useEffect(() => {
     const messages = [
-      "BIENVENIDOS A FRESA PLACE",
-      "ENTRE A CONTACTENOS A COTIZAR TU PEDIDO"
+      "Bienvenidos a Fresa Place",
+      "Dirigete a Contactenos y has tu pedido Especializado"
     ];
 
     const intervalId = setInterval(() => {
-      setMessage(prevMessage =>
-        prevMessage === messages[0] ? messages[1] : messages[0]
-      );
-    }, 3000); // Cambia el mensaje cada 3000 milisegundos (3 segundos)
+      setMessage(prevMessage => prevMessage === messages[0] ? messages[1] : messages[0]);
+    }, 4000); 
+
+
 
     // Limpieza del intervalo cuando el componente se desmonte
     return () => clearInterval(intervalId);

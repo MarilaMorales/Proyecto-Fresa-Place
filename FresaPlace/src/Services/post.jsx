@@ -6,7 +6,7 @@ async function postUser(nombre, correo, password) {
             password
         };
 
-        let response = await fetch("http://localhost:3001/users", {
+        let response = await fetch("http://localhost:3000/users", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

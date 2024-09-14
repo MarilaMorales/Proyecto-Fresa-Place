@@ -1,6 +1,6 @@
 export const deleteTarea = async (id) => {
     try {
-        const response = await fetch(`${'http://localhost:3001/tareas'}/${id}`, {
+        const response = await fetch(`${'http://localhost:3000/tareas'}/${id}`, {
             method: 'DELETE',
         });
         if (!response.ok) {

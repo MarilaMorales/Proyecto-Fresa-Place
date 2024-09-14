@@ -1,112 +1,120 @@
 {
-    "users": [
-      {
-        "id": "86e8",
-        "nombre": "hielo li",
-        "correo": "hielo@gmail.com"
-      },
-      {
-        "id": "620c",
-        "nombre": "Nixon blanco",
-        "correo": "nixon@gmail.com"
-      },
-      {
-        "id": "fe40",
-        "nombre": "Nixon Davila",
-        "correo": "nixonDa@gmail.com",
-        "password": "2810"
-      },
-      {
-        "id": "4a8e",
-        "nombre": "Nana",
-        "correo": "nana@gmail.com",
-        "password": "1212"
-      },
-      {
-        "id": "bc9b",
-        "nombre": "sheyris",
-        "correo": "sheyris@gmail.com",
-        "password": "1314"
-      },
-      {
-        "id": "d988",
-        "nombre": "sheyris",
-        "correo": "sheyris@gmail.com",
-        "password": "1314"
-      },
-      {
-        "id": "22d8",
-        "nombre": {
-          "username": "toto morales",
-          "email": "toto@gmail.com",
-          "password": "1234"
-        }
-      },
-      {
-        "id": "4400",
-        "nombre": {
-          "nombre": "xinia",
-          "correo": "xinia@gmail.com",
-          "password": "1234"
-        }
-      },
-      {
-        "id": "6628",
-        "nombre": {
-          "nombre": "adriana",
-          "correo": "adriana@gmail.com",
-          "password": "1234"
-        }
-      },
-      {
-        "id": "7969",
-        "nombre": {
-          "nombre": "adriana",
-          "correo": "adriana@gmail.com",
-          "password": "1234"
-        }
+  "users": [
+    {
+      "id": "86e8",
+      "nombre": "hielo li",
+      "correo": "hielo@gmail.com"
+    },
+    {
+      "id": "620c",
+      "nombre": "Nixon blanco",
+      "correo": "nixon@gmail.com"
+    },
+    {
+      "id": "fe40",
+      "nombre": "Nixon Davila",
+      "correo": "nixonDa@gmail.com",
+      "password": "2810"
+    },
+    {
+      "id": "4a8e",
+      "nombre": "Nana",
+      "correo": "nana@gmail.com",
+      "password": "1212"
+    },
+    {
+      "id": "bc9b",
+      "nombre": "sheyris",
+      "correo": "sheyris@gmail.com",
+      "password": "1314"
+    },
+    {
+      "id": "d988",
+      "nombre": "sheyris",
+      "correo": "sheyris@gmail.com",
+      "password": "1314"
+    },
+    {
+      "id": "22d8",
+      "nombre": {
+        "username": "toto morales",
+        "email": "toto@gmail.com",
+        "password": "1234"
       }
-    ],
-    "tareas": [
-      {
-        "id": "1d72",
-        "tarea": "Barrer",
-        "prioridad": "Low"
-      },
-      {
-        "id": "2360",
-        "tarea": "Estresarse por el Projecto",
-        "prioridad": "High"
-      },
-      {
-        "id": "19b9",
-        "tarea": "Esto no sirve",
-        "prioridad": "Medium"
-      },
-      {
-        "id": "d5fe",
-        "tarea": "Digamos que ya sirve bien",
-        "prioridad": "Medium"
-      },
-      {
-        "id": "00ac",
-        "tarea": "sigue sin servir bien",
-        "prioridad": "Low"
-      },
-      {
-        "id": "8a5f",
-        "tarea": "no edita",
-        "prioridad": "Medium"
-      },
-      {
-        "id": "5788",
-        "tarea": "Comprar Helados",
-        "prioridad": "High"
-      },
-      {
-        "id": "4983",
-        "tarea": "Bajo la luz",
-        "prioridad": "Medium"
+    },
+    {
+      "id": "4400",
+      "nombre": {
+        "nombre": "xinia",
+        "correo": "xinia@gmail.com",
+        "password": "1234"
       }
-    ]
-  }
+    },
+    {
+      "id": "6628",
+      "nombre": {
+        "nombre": "adriana",
+        "correo": "adriana@gmail.com",
+        "password": "1234"
+      }
+    },
+    {
+      "id": "7969",
+      "nombre": {
+        "nombre": "adriana",
+        "correo": "adriana@gmail.com",
+        "password": "1234"
+      }
+    },
+    {
+      "id": "a07d",
+      "nombre": {
+        "nombre": "juliana",
+        "correo": "juliana@gmail.com",
+        "password": "2626"
+      }
+    }
+  ],
+  "tareas": [
+    {
+      "id": "1d72",
+      "tarea": "Barrer",
+      "prioridad": "Low"
+    },
+    {
+      "id": "2360",
+      "tarea": "Estresarse por el Projecto",
+      "prioridad": "High"
+    },
+    {
+      "id": "19b9",
+      "tarea": "Esto no sirve",
+      "prioridad": "Medium"
+    },
+    {
+      "id": "d5fe",
+      "tarea": "Digamos que ya sirve bien",
+      "prioridad": "Medium"
+    },
+    {
+      "id": "00ac",
+      "tarea": "sigue sin servir bien",
+      "prioridad": "Low"
+    },
+    {
+      "id": "8a5f",
+      "tarea": "no edita",
+      "prioridad": "Medium"
+    },
+    {
+      "id": "5788",
+      "tarea": "Comprar Helados",
+      "prioridad": "High"
+    },
+    {
+      "id": "4983",
+      "tarea": "Bajo la luz",
+      "prioridad": "Medium"
+    }
+  ]
+}
