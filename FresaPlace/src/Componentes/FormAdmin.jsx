@@ -15,7 +15,7 @@ function FormAdmin() {
   const GuardarProductos = async (event) => {
     event.preventDefault(); // Previene el comportamiento por defecto del formulario
 
-    // Objeto con los datos del formulario
+
     const nuevoProducto = {
       nombre,
       descripcion,

@@ -4,6 +4,7 @@ import Login from "../Pages/Login.jsx"
 import Registro from '../Pages/Registro.jsx';
 import Administracion from '../Pages/Administracion.jsx';
 import Principal from '../Pages/Principal.jsx';
+import Adornos from '../Pages/Adornos.jsx';
 
 
 const Routing = () => {
@@ -14,6 +15,7 @@ const Routing = () => {
        <Route path="/Registro" element={<Registro />} />
        <Route path="/Login" element={<Login />} />
        <Route path="/Principal" element={<Principal />} />
+       <Route path="/Adornos" element={<Adornos />} />
        <Route path="/Administracion" element={<Administracion />} />
      </Routes>
    );

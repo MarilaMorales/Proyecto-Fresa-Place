@@ -66,6 +66,20 @@
       "descripcion": "Farol de la Independencia",
       "tags": "Escolar",
       "imagen": "Dedoasjdn"
+    },
+    {
+      "id": "6858",
+      "nombre": "Adorno",
+      "descripcion": "Adorno de Navidad",
+      "tags": "Adorno",
+      "imagen": "Adorno"
+    },
+    {
+      "id": "5f7c",
+      "nombre": "Adorno Manualidad",
+      "descripcion": "Manualiad",
+      "tags": "Adorno",
+      "imagen": "Manualidad"
     }
   ],
   "imagen": []
