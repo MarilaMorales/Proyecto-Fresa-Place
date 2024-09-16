@@ -14,17 +14,20 @@ function CardAdornos() {
       try {
         const productos = await getProductos();
         
-        // Filtra los productos con el tag 'Adorno'
+        // Filtra los productos con el tag adorno
         const productosFiltrados = productos.filter(producto => producto.tags === 'Adorno');
         setProductos(productosFiltrados);
       } catch (error) {
-        console.error('Error fetching filtered products:', error);
+        console.error('Error al filtrar los prodctps:', error);
       }
     }
 
     fetchProductos();
   }, []);
 
+
+
+  // Itera sobre cada elemento en productos y crea un card con la info del db.json
   return (
     <div className="d-flex flex-wrap">
       {productos.map(producto => (

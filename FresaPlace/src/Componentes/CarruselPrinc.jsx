@@ -1,5 +1,4 @@
 import Carousel from 'react-bootstrap/Carousel';
-
 import Ninas from "../IMG/Ninas.png"
 import Payasita from "../IMG/Payasita.jpg"
 import Totem from "../IMG/Totem.png"
