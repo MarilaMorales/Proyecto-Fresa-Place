@@ -26,6 +26,10 @@ async function postUser(nombre, correo, password) {
 }
 
 
+
+
+
+
 export const postProductos = async (productos) => {
     try {
         const response = await fetch('http://localhost:3000/productos', {

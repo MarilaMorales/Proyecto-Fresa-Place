@@ -1,16 +1,16 @@
 
 
-export const updateTarea = async (id, tarea) => {
+export const updateProductos = async (id, Productos) => {
     try {
-        const response = await fetch(`http://localhost:3000/tareas/${id}`, {
+        const response = await fetch(`http://localhost:3000/productos/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(tarea),
+            body: JSON.stringify(Productos),
         });
         if (!response.ok) {
-            throw new Error('Error al actualizar tarea');
+            throw new Error('Error al actualizar Producto');
         }
         return await response.json();
     } catch (error) {
@@ -18,3 +18,5 @@ export const updateTarea = async (id, tarea) => {
         throw error;
     }
 };
+
+
