@@ -1,8 +1,20 @@
 .flex-column{
     background-color: rgb(231, 17, 149);
-    width: 13%;
     height: 100vh;
 
     
 }
 
+
+#linkAdmin, #linkEdit, #linkImages {
+    text-decoration: solid;
+    color: rgb(213, 189, 240);
+    font-size: 1.5rem;
+    align-self: center;
+
+  }
+  
+  #linkAdmin:hover, #linkEdit:hover, #linkImages:hover {
+    text-decoration: underline; 
+  }
+  

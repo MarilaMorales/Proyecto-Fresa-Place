@@ -1,0 +1,33 @@
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten si hay más de una fila */
+    gap: 1rem; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+.custom-card {
+    width: 18rem; /* Tamaño fijo para las tarjetas */
+    height: 25rem; /* Tamaño fijo para las tarjetas, ajusta según sea necesario */
+}
+
+.custom-card-img {
+    height: 14rem; /* Ajusta la altura de la imagen para que se mantenga uniforme */
+    object-fit: cover; 
+    /* Mantiene la proporción de la imagen y cubre el área del contenedor */
+}
+
+.custom-btn {
+    margin: 0.5rem; /* Espacio entre los botones */
+  
+}
+
+.btn-danger.custom-btn {
+    background-color: #da15a8; /* Cambia el color de fondo del botón "Eliminar" */
+    border: none; /* Elimina el borde */
+}
+
+.btn-primary.custom-btn {
+    background-color: #007bff; /* Cambia el color de fondo del botón "Editar" */
+    border: none; /* Elimina el borde */
+}
