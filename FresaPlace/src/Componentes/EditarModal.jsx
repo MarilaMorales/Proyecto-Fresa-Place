@@ -2,34 +2,55 @@ import React, { useState, useEffect } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 
 
-
-
-
-
-
-const EditarModal = ({ show, CerrarModal, putProductos, onSave }) => {
-    const [nuevoNombre, setNuevoNombre] = useState(putProductos?.nombre || "");
-    const [nuevoPrecio, setNuevoPrecio] = useState(putProductos?.precio || "")
-    const [nuevaDescripcion, setNuevaDescripcion] = useState(putProductos?.descripcion || "");
-    const [nuevaImagen, setNuevaImagen] = useState(putProductos?.imagen || "");
-
+const EditarModal = ({ show, CerrarModal, updateProducto, onSave }) => {
+    const [nuevoNombre, setNuevoNombre] = useState('');
+    const [nuevoPrecio, setNuevoPrecio] = useState('');
+    const [nuevaDescripcion, setNuevaDescripcion] = useState('');
+    const [nuevaImagen, setNuevaImagen] = useState('');
+  
     useEffect(() => {
-
-
-
-        // Cuando putProductos cambie, actualiza los valores del estado
-        setNuevoNombre(putProductos?.nombre || "");
-        setNuevoPrecio(putProductos?.precio || "");
-        setNuevaDescripcion(putProductos?.descripcion || "");
-        setNuevaImagen(putProductos?.imagen || "");
-    }, [putProductos]);
-
+      if (updateProducto) {
+        setNuevoNombre(updateProducto.nombre || '');
+        setNuevoPrecio(updateProducto.precio || '');
+        setNuevaDescripcion(updateProducto.descripcion || '');
+        setNuevaImagen(updateProducto.imagen || '');
+      }
+    }, [updateProducto]);
+  
     const GuardarCambios = () => {
-        if (nuevoNombre && nuevaDescripcion && nuevaImagen) {
-            onSave({ ...putProductos, nombre: nuevoNombre, descripcion: nuevaDescripcion, imagen: nuevaImagen });
-            CerrarModal();
+      if (nuevoNombre && nuevaDescripcion && nuevaImagen) {
+        if (typeof onSave === 'function') {
+          onSave({ ...updateProducto, nombre: nuevoNombre, precio: nuevoPrecio, descripcion: nuevaDescripcion, imagen: nuevaImagen });
+        } else {
+          console.error('onSave is not a function');
         }
+        CerrarModal();
+      }
     };
+
+// const EditarModal = ({ show, CerrarModal, updateProducto, onSave }) => {
+//     const [nuevoNombre, setNuevoNombre] = useState(updateProducto?.nombre || "");
+//     const [nuevoPrecio, setNuevoPrecio] = useState(updateProducto?.precio || "")
+//     const [nuevaDescripcion, setNuevaDescripcion] = useState(updateProducto?.descripcion || "");
+//     const [nuevaImagen, setNuevaImagen] = useState(updateProducto?.imagen || "");
+
+//     useEffect(() => {
+
+
+
+//         // Cuando updateProducto cambie, actualiza los valores del estado
+//         setNuevoNombre(updateProducto?.nombre || "");
+//         setNuevoPrecio(updateProducto?.precio || "");
+//         setNuevaDescripcion(updateProducto?.descripcion || "");
+//         setNuevaImagen(updateProducto?.imagen || "");
+//     }, [updateProducto]);
+
+//     const GuardarCambios = () => {
+//         if (nuevoNombre && nuevaDescripcion && nuevaImagen) {
+//             onSave({ ...updateProducto, nombre: nuevoNombre, precio: nuevoPrecio, descripcion: nuevaDescripcion, imagen: nuevaImagen });
+//             CerrarModal();
+//         }
+//     };
 
     return (
         <Modal show={show} onHide={CerrarModal}>
@@ -47,6 +68,15 @@ const EditarModal = ({ show, CerrarModal, putProductos, onSave }) => {
                             onChange={(e) => setNuevoNombre(e.target.value)}
                         />
                     </Form.Group>
+                    <Form.Group controlId="formPrecio">
+                        <Form.Label>Precio</Form.Label>
+                        <Form.Control
+                            type='number'
+                            placeholder="Edita el precio del Producto"
+                            value={nuevoPrecio}
+                            onChange={(e) => setNuevoPrecio(e.target.value)}
+                        />
+                        </Form.Group>
                     <Form.Group controlId="formDescripcion">
                         <Form.Label>Descripción</Form.Label>
                         <Form.Control
@@ -81,3 +111,7 @@ const EditarModal = ({ show, CerrarModal, putProductos, onSave }) => {
 };
 
 export default EditarModal;
+
+
+
+

@@ -6,7 +6,11 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import EditarModal from './EditarModal'; // Importa el modal
+import EditarModal from './EditarModal'; 
+
+
+
+
 
 const EditarProductos = () => {
     const [productos, setProductos] = useState([]);
@@ -40,14 +44,23 @@ const EditarProductos = () => {
     const guardarCambios = async (productoActualizado) => {
         try {
             const productoActualizadoEnDb = await updateProductos(productoActualizado.id, productoActualizado);
+            console.log("producto");
             setProductos(productos.map(producto =>
                 producto.id === productoActualizado.id ? productoActualizadoEnDb : producto
             ));
-            toast.success('Producto actualizado con éxito');
+            console.log("producto");
+            
+            toast.success("Producto actualizado con éxito");
         } catch (error) {
-            toast.error('Error al actualizar el producto');
+            toast.error("Error al actualizar el producto");
         }
     };
+
+
+
+
+
+
 
     return (
         <div className="container mt-4">
@@ -59,8 +72,12 @@ const EditarProductos = () => {
                         <Card.Text>
                             {producto.descripcion}
                         </Card.Text>
+                        <Card.Text>
+                            {producto.precio}
+                        </Card.Text>
                         <Button variant="danger" onClick={() => eliminarProductos(producto.id)}>Eliminar</Button>
                         <Button variant="primary" onClick={() => abrirModal(producto)}>Editar</Button>
+                  
                     </Card.Body>
                 </Card>
             ))}
