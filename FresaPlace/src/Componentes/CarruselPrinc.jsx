@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Ninas from "../IMG/Ninas.png"
-import Payasita from "../IMG/Payasita.jpg"
-import Totem from "../IMG/Totem.png"
+import Ninas from "../IMG/Murales/Ninas.png"
+import MuralPayasita from "../IMG/Murales/MuralPayasita.jpg"
+import MuralMarino from "../IMG/Murales/MuralMarino.jpg"
 
 function CarruselPrinc() {
   return (
@@ -15,7 +15,7 @@ function CarruselPrinc() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img className="d-block w-100" src={Payasita} alt="First slide" />
+      <img className="d-block w-100" src={MuralPayasita} alt="First slide" />
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -23,7 +23,7 @@ function CarruselPrinc() {
       </Carousel.Item>
       <Carousel.Item>
       <img
-          className="d-block w-100" src={Totem} alt="First slide"/>
+          className="d-block w-100" src={MuralMarino} alt="First slide"/>
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>

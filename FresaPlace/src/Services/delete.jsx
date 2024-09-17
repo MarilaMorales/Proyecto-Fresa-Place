@@ -1,10 +1,10 @@
-export const deleteTarea = async (id) => {
+export const deleteProductos = async (id) => {
     try {
-        const response = await fetch(`${'http://localhost:3000/tareas'}/${id}`, {
+        const response = await fetch(`${'http://localhost:3000/productos'}/${id}`, {
             method: 'DELETE',
         });
         if (!response.ok) {
-            throw new Error('Error al eliminar tarea');
+            throw new Error('Error al eliminar el Producto');
         }
     } catch (error) {
         console.error(error);

@@ -19,11 +19,11 @@ function FormAdmin() {
     if (file) {
       try {
         // Convierte la imagen a base64
-        const uploadpic = await imageUpload64(file);
-        console.log("Imagen en base64:", uploadpic);
+        const base64Image = await imageUpload64(file);
+        console.log("Imagen en base64:", base64Image);
   
         // Actualiza el estado de imagen con la cadena base64
-        setImagen(uploadpic);
+        setImagen(base64Image);
       } catch (error) {
         console.error("Error al convertir la imagen:", error);
       }
