@@ -27,17 +27,11 @@ function NavBarInc() {
             <NavDropdown title="Eventos Especiales" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Navidad</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Mes de la Independencia</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Articulos de Fiesta" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Paquetes</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Piñatas</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Murales</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Nose</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Cotice
