@@ -3,8 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "../styles/NavBar.css"
+import { Link } from 'react-router-dom';
+
+
+
+
 
 function NavBarInc() {
+
+
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container id='back_color'>

@@ -13,10 +13,10 @@ function FormAdmin() {
   const [descripcion, setDescripcion] = useState('');
   const [tags, setTags] = useState('');
   const [imagen, setImagen] = useState('');
-  const [precio, setPrecio] = useState(''); // Nuevo estado para el precio
+  const [precio, setPrecio] = useState(''); 
 
   const submitImagen = async (e) => {
-    // Accede al archivo desde e.target.files
+    
     const file = e.target.files[0];
     
     if (file) {
@@ -43,14 +43,14 @@ function FormAdmin() {
       descripcion,
       tags,
       imagen,
-      precio, // Incluye el precio
+      precio, 
     };
 
     try {
-      // Llama a la función postProductos desde el 
+    
       await postProductos(nuevoProducto);
 
-      // Si la solicitud fue exitosa
+ 
       toast.success("Producto agregado exitosamente!");
 
       // Limpiar los campos del formulario
@@ -58,7 +58,7 @@ function FormAdmin() {
       setDescripcion("");
       setTags("");
       setImagen("");
-      setPrecio(""); // Limpiar el campo del precio
+      setPrecio(""); 
     
     } catch (error) {
       toast.error("Hubo un error al agregar el producto.");
