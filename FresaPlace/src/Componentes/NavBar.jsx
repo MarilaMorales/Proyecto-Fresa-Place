@@ -12,22 +12,17 @@ import { Link } from 'react-router-dom';
 function NavBarInc() {
 
 
-
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container id='back_color'>
-        <Navbar.Brand href="#home">FRESA PLACE</Navbar.Brand>
+        <Navbar.Brand href="/Principal">FRESA PLACE</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#link">Escolar</Nav.Link>
-            <Nav.Link href="#home">Envolturas</Nav.Link>
-            <Nav.Link href="#home">Decoracion</Nav.Link>
-            <Nav.Link href="#link">Adornos</Nav.Link>
-            <NavDropdown title="Eventos Especiales" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Navidad</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Mes de la Independencia</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/Escolar">Escolar</Nav.Link>
+            <Nav.Link href="/Decoracion">Decoracion</Nav.Link>
+            <Nav.Link href="/Adornos">Adornos</Nav.Link>
+
             <NavDropdown title="Articulos de Fiesta" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Paquetes</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Piñatas</NavDropdown.Item>

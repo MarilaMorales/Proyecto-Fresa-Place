@@ -7,7 +7,7 @@ import CardDecoracion from '../Componentes/CardsDecoracion';
 
 
 
-function Adornos() {
+function Decoracion() {
   return (
     <div>
       <Header />
@@ -17,4 +17,4 @@ function Adornos() {
   )
 }
 
-export default Adornos
+export default Decoracion

@@ -43,6 +43,22 @@
         "correo": "juliana@gmail.com",
         "password": "2626"
       }
+    },
+    {
+      "id": "958d",
+      "nombre": {
+        "nombre": "Maria LAura",
+        "correo": "mariaq@gmail.com",
+        "password": "1234"
+      }
+    },
+    {
+      "id": "c729",
+      "nombre": {
+        "nombre": "Luna Lu",
+        "correo": "lunalu@gmail.com",
+        "password": "1234"
+      }
     }
   ],
   "productos": [

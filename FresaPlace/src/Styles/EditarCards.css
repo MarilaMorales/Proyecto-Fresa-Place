@@ -7,14 +7,14 @@
 }
 
 .custom-card {
-    width: 18rem; /* Tamaño fijo para las tarjetas */
-    height: 25rem; /* Tamaño fijo para las tarjetas, ajusta según sea necesario */
+    width: 18rem; 
+    height: 25rem; 
 }
 
 .custom-card-img {
-    height: 14rem; /* Ajusta la altura de la imagen para que se mantenga uniforme */
+    height: 14rem; 
     object-fit: cover; 
-    /* Mantiene la proporción de la imagen y cubre el área del contenedor */
+   
 }
 
 .custom-btn {

@@ -5,6 +5,7 @@ import { getUsers } from "../Services/get";
 import { useNavigate } from "react-router-dom";
 // import Mandala from "../IMG/Mandala.png"
 import '../Styles/Registro.css';
+import { toast } from 'react-toastify';
 
 function FormRegistro() {
   const [username, setUsername] = useState(''); 
@@ -69,7 +70,7 @@ function FormRegistro() {
       
       // Registrar nuevo usuario con el formato correcto
       await postUser(userObjeto);
-      setMessage("¡Registro exitoso!");
+      toast.success ("¡Registro exitoso!");
       navigate("/login"); 
   
       setUsername('');

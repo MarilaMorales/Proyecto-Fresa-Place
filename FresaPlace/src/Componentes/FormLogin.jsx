@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBInput } from 'mdb-react-ui-kit';
 import { getUsers } from "../Services/get";
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 import "../Styles/Login.css";
 
 
@@ -48,7 +49,7 @@ function FormLogin() {
       // Verifica si el correo y la contraseña coinciden con los de un administrador
       if (email === 'juliana@gmail.com' && password === '2626') {
         localStorage.setItem('Autentificado', 'true');
-        setMessage('¡Éxito! Usuario entrando.');
+        toast.success ('¡Éxito! Admnistrador entrando.');
         navigate("/Administracion");
         return; // Salir de la función después de redirigir
       }
@@ -58,7 +59,7 @@ function FormLogin() {
       if (user) {
         if (user.password === password) {
           localStorage.setItem('Autentificado', 'true');
-          setMessage('¡Éxito! Usuario entrando.');
+          toast.success ('¡Éxito! Usuario entrando.');
           navigate("/Principal");
         } else {
           setMessage('Contraseña incorrecta.');

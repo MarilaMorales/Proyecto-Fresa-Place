@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import "../Styles/Sidebar.css";
-import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
+import { Link } from "react-router-dom"; 
 
 function SideBar() {
   return (
