@@ -7,6 +7,7 @@ import Principal from '../Pages/Principal.jsx';
 import Adornos from '../Pages/Adornos.jsx';
 import EditarCards from '../Pages/EditarCards.jsx';
 import Contactenos from "../Pages/Contactenos.jsx"
+import AboutUs from "../Pages/AboutUs.jsx"
 
 
 
@@ -22,6 +23,7 @@ const Routing = () => {
        <Route path="/Administracion" element={<Administracion />} />
        <Route path="/EditarCards" element={<EditarCards />} />
        <Route path="/Contactenos" element={<Contactenos />} />
+       <Route path="/AboutUs" element={<AboutUs />} />
       
      </Routes>
    );
