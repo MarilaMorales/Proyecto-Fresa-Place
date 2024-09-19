@@ -3,12 +3,17 @@ import { Modal, Button, Form } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 
 
+
+
+
 const EditarModal = ({ show, CerrarModal, updateProducto, onSave }) => {
     const [nuevoNombre, setNuevoNombre] = useState('');
     const [nuevoPrecio, setNuevoPrecio] = useState('');
     const [nuevaDescripcion, setNuevaDescripcion] = useState('');
     const [nuevaImagen, setNuevaImagen] = useState('');
-  
+
+    
+    
     useEffect(() => {
       if (updateProducto) {
         setNuevoNombre(updateProducto.nombre || '');

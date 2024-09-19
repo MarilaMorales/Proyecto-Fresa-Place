@@ -47,9 +47,9 @@ function FormLogin() {
 
     try {
       // Verifica si el correo y la contraseña coinciden con los de un administrador
-      if (email === 'juliana@gmail.com' && password === '2626') {
-        localStorage.setItem('Autentificado', 'true');
-        toast.success ('¡Éxito! Admnistrador entrando.');
+      if (email === "juliana@gmail.com" && password === "2626") {
+        localStorage.setItem("Autentificado", "true");
+        toast.success ("¡Éxito! Admnistrador entrando.");
         navigate("/Administracion");
         return; // Salir de la función después de redirigir
       }
@@ -58,7 +58,7 @@ function FormLogin() {
       const user = users.find(u => u.correo === email);
       if (user) {
         if (user.password === password) {
-          localStorage.setItem('Autentificado', 'true');
+          localStorage.setItem("Autentificado", "true");
           toast.success ('¡Éxito! Usuario entrando.');
           navigate("/Principal");
         } else {

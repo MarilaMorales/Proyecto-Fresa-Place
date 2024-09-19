@@ -1,22 +1,34 @@
-
 import React, { useState } from 'react';
 
-const SearchBar = ({ onSearch }) => {
-    const [inputValue, setInputValue] = useState(''); // Guarda lo que el usuario escribe
 
-    const handleChange = (e) => {
-        setInputValue(e.target.value); // Actualiza el valor de entrada
-        onSearch(e.target.value); // Llama a la función para filtrar productos
+
+const SearchBar = ({ onSearch }) => {
+    const [inputValue, setInputValue] = useState('');
+
+    const ReemplazoModal = (e) => {
+        setInputValue(e.target.value);
+    };
+
+    const busqProductos = () => {
+        onSearch(inputValue); // Llama a la función onSearch con el valor actual
     };
 
     return (
-        <input
-            type="text"
-            id="busqueda"
-            placeholder="Search"
-            value={inputValue}
-            onChange={handleChange}
-        />
+        <div className="containerSearch">
+            <input
+                type="text"
+                placeholder="Search"
+                value={inputValue}
+                onChange={ReemplazoModal}
+                className="inputSearch" // Clase para el input
+            />
+            <button
+                onClick={busqProductos}
+                className="buttonSearch" // Clase para el botón
+            >
+                Buscar
+            </button>
+        </div>
     );
 };
 

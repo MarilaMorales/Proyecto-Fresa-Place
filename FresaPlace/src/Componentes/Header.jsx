@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "../Styles/Header.css";
 import Logo from "../IMG/Logo.png";
 import { getProductos } from '../Services/get';
-import SearchBar from "../";
+import SearchBar from "../Componentes/SearchBar"
 import ModalREsults from "../Componentes/ModalResults"; 
 
 
@@ -27,14 +27,18 @@ const Header = () => {
         fetchProductos();
     }, []);
 
+
+
+
     const Busqueda = (inputBusqueda) => {
         const filtered = productos.filter((producto) =>
-            producto.name.toLowerCase().includes(inputBusqueda.toLowerCase())
+            (producto.nombre && producto.nombre.toLowerCase().includes(inputBusqueda.toLowerCase())) ||
+            (producto.descripcion && producto.descripcion.toLowerCase().includes(inputBusqueda.toLowerCase())) // Agrega la búsqueda por descripción
         );
         filtroProductos(filtered);
         setShowModal(true);
     };
-
+    
     const CerrarModal = () => {
         setShowModal(false); // Cierra el modal
     };
