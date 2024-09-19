@@ -9,6 +9,10 @@ import Card from 'react-bootstrap/Card';
 import EditarModal from './EditarModal'; 
 import "../Styles/EditarCards.css"; 
 
+
+
+
+
 const EditarProductos = () => {
     const [productos, setProductos] = useState([]);
     const [showModal, setShowModal] = useState(false);
