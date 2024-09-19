@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import "../Styles/Header.css";
 import Logo from "../IMG/Logo.png";
 import { getProductos } from '../Services/get';
-import SearchResultsModal from './SearchResultsModal'; 
+import SearchBar from "../";
+import ModalREsults from "../Componentes/ModalResults"; 
+
 
 
 
@@ -11,29 +13,29 @@ import SearchResultsModal from './SearchResultsModal';
 const Header = () => {
 
     const [productos, setProductos] = useState([]);
-    const [filteredProductos, setFilteredProductos] = useState([]);
+    const [filteredProductos, filtroProductos] = useState([]);
     const [showModal, setShowModal] = useState(false); // Estado para controlar el modal
 
 
-    
+
     useEffect(() => {
         const fetchProductos = async () => {
             const data = await getProductos();
             setProductos(data);
-            setFilteredProductos(data);
+            filtroProductos(data);
         };
         fetchProductos();
     }, []);
 
-    const handleSearch = (searchTerm) => {
+    const Busqueda = (inputBusqueda) => {
         const filtered = productos.filter((producto) =>
-            producto.name.toLowerCase().includes(searchTerm.toLowerCase())
+            producto.name.toLowerCase().includes(inputBusqueda.toLowerCase())
         );
-        setFilteredProductos(filtered);
-        setShowModal(true); // Muestra el modal al hacer la búsqueda
+        filtroProductos(filtered);
+        setShowModal(true);
     };
 
-    const handleCloseModal = () => {
+    const CerrarModal = () => {
         setShowModal(false); // Cierra el modal
     };
 
@@ -43,12 +45,12 @@ const Header = () => {
                 <img src={Logo} alt="Logo" />
             </div>
             <nav className="navHeader">
-                {/* Enlaces de navegación si los necesitas */}
+                {/* Info Extra */}
             </nav>
-            <SearchBar onSearch={handleSearch} />
-            <SearchResultsModal 
+            <SearchBar onSearch={Busqueda} />
+            <ModalREsults 
                 show={showModal} 
-                handleClose={handleCloseModal} 
+                handleClose={CerrarModal} 
                 results={filteredProductos} 
             />
         </header>
