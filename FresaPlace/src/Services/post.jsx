@@ -51,5 +51,25 @@ export const postProductos = async (productos) => {
 
 
 
+export const postQuotes = async (productos) => {
+    try {
+        const response = await fetch('http://localhost:3000/quotes', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(productos),
+        });
+        if (!response.ok) {
+            throw new Error('Error al agregar el Qoute ');
+        }
+        return await response.json();
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+};
+
+
 
 export {postUser}
