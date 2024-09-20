@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "../styles/SearchBar.css"
 
 
 const SearchBar = ({ onSearch }) => {
@@ -10,17 +10,18 @@ const SearchBar = ({ onSearch }) => {
     };
 
     const busqProductos = () => {
-        onSearch(inputValue); // Llama a la función onSearch con el valor actual
+        onSearch(inputValue); 
     };
 
     return (
         <div className="containerSearch">
             <input
                 type="text"
-                placeholder="Search"
+                id='searchBarText'
+ 
                 value={inputValue}
                 onChange={ReemplazoModal}
-                className="inputSearch" // Clase para el input
+                className="inputSearch" 
             />
             <button
                 onClick={busqProductos}

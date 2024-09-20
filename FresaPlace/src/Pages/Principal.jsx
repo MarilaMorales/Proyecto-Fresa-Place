@@ -3,6 +3,7 @@ import NavBarInc from '../Componentes/NavBar'
 import Header from '../Componentes/Header'
 import CarruselPrinc from '../Componentes/CarruselPrinc'
 import Footer from "../Componentes/Footer"
+import "../Styles/Principal.css"
 
 
 
@@ -11,7 +12,7 @@ import Footer from "../Componentes/Footer"
 
 function Principal() {
   return (
-    <div>
+    <div className='pagePrincipal'>
       <Header />
       <NavBarInc />
       <CarruselPrinc />

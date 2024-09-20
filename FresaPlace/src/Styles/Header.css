@@ -3,38 +3,21 @@
     padding: 0;
 } 
 
-
-
   
   .containerHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: -webkit-linear-gradient(90deg, #e94f88,#e94f88,#f3a188);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #e94f88,#e94f88,#f3a188);
-    padding: 1rem;
+    background: linear-gradient(90deg, #e94f88,#e94f88,#f3a188);
+    
   }
   
   .logoHeader img {
-    height: 8rem; /* Ajusta el tamaño según necesites */
+    height: 11rem; 
     margin: 0px;
+    margin-left: 1rem;
+    padding-bottom: 0.8rem;
   }
-  
-  .navHeader {
-    background-color: #FF6437 ;
-  }
-  
-  /* Si quieres un efecto secundario en el hover */
-  .containerHeader:hover {
-    background-color: #F89CBE;
-  }
-  
-  #Busqueda{
-    border: '2px solid #FDCEDF';
-    border-radius: '20px';
-    background-color: 'transparent';
-    color: '#FDCEDF';
-    padding: '10px';
-    outline: 'none';
-    width: '200px';
-}
 
+
+ 

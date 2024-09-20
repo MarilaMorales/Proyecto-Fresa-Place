@@ -1,7 +1,14 @@
 .containerSearch {
     display: flex;
     align-items: center;
+    margin-right: 0.2rem;
+    margin-bottom: 7.5rem;
+    width: 35%;
+    
+
+
 }
+
 
 .inputSearch {
     border: 2px solid #FDCEDF;
@@ -10,15 +17,17 @@
     color: #FDCEDF;
     padding: 10px;
     outline: none;
-    width: 200px;
+    height: 2rem;
     margin-right: 10px; /* Espacio entre el input y el botón */
+    width: 100%;
 }
 
 .buttonSearch {
     border: none;
     border-radius: 20px;
     background-color: #FDCEDF;
-    color: #000; /* Cambia el color del texto si es necesario */
-    padding: 10px 15px;
+    color: #DF3071;
+    padding: 4px 15px;
     cursor: pointer;
+    height: 2rem;
 }

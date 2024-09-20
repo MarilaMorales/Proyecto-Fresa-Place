@@ -1,6 +1,14 @@
+.navbar{
+  margin: 0px;
+  padding: 0px;
+  background-color: #ff6437;
+}
 
 .bg-body-tertiary {
     background-color: #ff6437;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100%;
   }
   
   #back_color{
