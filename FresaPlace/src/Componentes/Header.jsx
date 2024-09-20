@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "../Styles/Header.css";
-import Logo from "../IMG/Logo.png";
+import LogoTransparente from "../IMG/LogoTransparente.png"
 import { getProductos } from '../Services/get';
 import SearchBar from "../Componentes/SearchBar"
 import ModalREsults from "../Componentes/ModalResults"; 
@@ -46,7 +46,7 @@ const Header = () => {
     return (
         <header className="containerHeader">
             <div className="logoHeader">
-                <img src={Logo} alt="Logo" />
+                <img src={LogoTransparente} alt="Logo" />
             </div>
             <nav className="navHeader">
                 {/* Info Extra */}

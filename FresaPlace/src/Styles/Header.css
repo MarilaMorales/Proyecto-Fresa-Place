@@ -4,28 +4,6 @@
 } 
 
 
-/* 
-#Logo{
-  height: 1rem;
-}
- 
-  header {
-    background-color: #F172A1; 
-  
-    color: #FFFFFF; 
-    text-align: center;
-    height: 9rem;
-    width: 100vw;
-  }
-  
- header h1 {
-    font-size: 1.2rem;
-    font-family: cursive;
-    padding-top: 0.3rem;
-    width: 100vw;
-    background-color: #a95071;
-  } */
-
 
   
   .containerHeader {
@@ -37,7 +15,8 @@
   }
   
   .logoHeader img {
-    height: 50px; /* Ajusta el tamaño según necesites */
+    height: 8rem; /* Ajusta el tamaño según necesites */
+    margin: 0px;
   }
   
   .navHeader {

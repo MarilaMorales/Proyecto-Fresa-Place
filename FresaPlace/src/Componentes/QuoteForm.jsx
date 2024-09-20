@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { postQuotes } from "../Services/post";
 import { toast } from 'react-toastify';
+import emailjs from 'emailjs-com'; 
+
 
 
 
@@ -12,26 +14,32 @@ const CotizacionForm = () => {
   const [mural, setMural] = useState('');
   const [decoracion, setDecoracion] = useState('');
 
-  // Maneja el envío del formulario
-  const enviarQuote = async (e) => {
-    e.preventDefault(); // Previene el comportamiento por defecto de enviar el formulario
 
-    // Crea un objeto de cotización
+
+  const enviarQuote = async (e) => {
+    e.preventDefault();
+
     const cotizacion = { tamañoPiñata, bolsitas, tipoBolsitas, mural, decoracion };
 
-
     try {
-      // Llama a la función para guardar la cotización en el db.json
-    
+      // Guarda la cotización en el db.json
       const result = await postQuotes(cotizacion);
-      console.log('Cotización guardada:', result);
-      toast.success("Cotizacion enviada Exitosamente!")
-    
-      // Aquí puedes mostrar un mensaje de éxito si lo deseas
+      console.log("Cotización guardada:", result);
+      toast.success("Cotizacion enviada Exitosamente!");
+
+      // Enviar el correo a través de EmailJS
+      const templateParams = {
+        to_name: "Cliente", 
+        from_name: "Tu Nombre", 
+        message: `Tamaño de piñata: ${tamañoPiñata}\nBolsitas: ${bolsitas}\nTipo de bolsitas: ${tipoBolsitas}\nMural: ${mural}\nDecoración: ${decoracion}`,
+      };
+
+      await emailjs.send("service_56xi5wh", "template_hj0ofgb", templateParams, "rV7wVdf0tWzRA66hT");
+      toast.success("Correo enviado exitosamente!");
+
     } catch (error) {
-      console.error('Error al guardar la cotización:', error);
-        toast.error("Error al enviar la cotizacion")
-     
+      console.error("Error al enviar la cotización:", error);
+      toast.error("Error al enviar la cotizacion");
     }
   };
 
@@ -101,4 +109,3 @@ const CotizacionForm = () => {
 };
 
 export default CotizacionForm;
-

@@ -69,6 +69,38 @@
       "tipoBolsitas": "hechas a mano",
       "mural": "nombre",
       "decoracion": "small"
+    },
+    {
+      "id": "07ed",
+      "tamañoPiñata": "30cm",
+      "bolsitas": "20",
+      "tipoBolsitas": "de tienda",
+      "mural": "nombre",
+      "decoracion": "small"
+    },
+    {
+      "id": "8d6b",
+      "tamañoPiñata": "30cm",
+      "bolsitas": "10",
+      "tipoBolsitas": "hechas a mano",
+      "mural": "nombre",
+      "decoracion": "small"
+    },
+    {
+      "id": "2b97",
+      "tamañoPiñata": "30cm",
+      "bolsitas": "10",
+      "tipoBolsitas": "hechas a mano",
+      "mural": "nombre",
+      "decoracion": "small"
+    },
+    {
+      "id": "fc05",
+      "tamañoPiñata": "30cm",
+      "bolsitas": "10",
+      "tipoBolsitas": "hechas a mano",
+      "mural": "nombre",
+      "decoracion": "small"
     }
   ],
   "productos": [
