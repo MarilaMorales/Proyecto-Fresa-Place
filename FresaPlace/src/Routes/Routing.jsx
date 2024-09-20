@@ -9,6 +9,7 @@ import EditarCards from '../Pages/EditarCards.jsx';
 import Contactenos from "../Pages/Contactenos.jsx"
 import AboutUs from "../Pages/AboutUs.jsx"
 import Decoracion from "../Pages/Decoracion.jsx"
+import Cotizaciones from "../Pages/Cotizaciones.jsx"
 
 const Routing = () => {
   return (
@@ -22,6 +23,7 @@ const Routing = () => {
        <Route path="/Decoracion" element={<Decoracion />} />
        <Route path="/Administracion" element={<Administracion />} />
        <Route path="/EditarCards" element={<EditarCards />} />
+       <Route path="/Cotizaciones" element={<Cotizaciones />} />
        <Route path="/Contactenos" element={<Contactenos />} />
        <Route path="/AboutUs" element={<AboutUs />} />
       

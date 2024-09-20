@@ -1,124 +1,104 @@
-
 import React, { useState } from 'react';
-import { postProductos } from "../Services/post"; 
-import imageUpload64 from '../Controller/Convertobase64';
-import "../Styles/FormAdmin.css"
+import { postQuotes } from "../Services/post";
 import { toast } from 'react-toastify';
 
-function FormAdmin() {
 
-  // Se usa el useState
-  const [nombre, setNombre] = useState('');
-  const [descripcion, setDescripcion] = useState('');
-  const [tags, setTags] = useState('');
-  const [imagen, setImagen] = useState('');
-  const [precio, setPrecio] = useState(''); 
 
-  const submitImagen = async (e) => {
-    
-    const file = e.target.files[0];
-    
-    if (file) {
-      try {
-        // Convierte la imagen a base64
-        const base64Image = await imageUpload64(file);
-        console.log("Imagen en base64:", base64Image);
-  
-        // Actualiza el estado de imagen con la cadena base64
-        setImagen(base64Image);
-      } catch (error) {
-        console.error("Error al convertir la imagen:", error);
-      }
-    }
-  };
-  
-  // Guardar los productos
-  const GuardarProductos = async (event) => {
-    event.preventDefault(); 
 
-    // Añadir el precio al objeto del nuevo producto
-    const nuevoProducto = {
-      nombre,
-      descripcion,
-      tags,
-      imagen,
-      precio, 
-    };
+const CotizacionForm = () => {
+  const [tamañoPiñata, setTamañoPiñata] = useState('');
+  const [bolsitas, setBolsitas] = useState('');
+  const [tipoBolsitas, setTipoBolsitas] = useState('');
+  const [mural, setMural] = useState('');
+  const [decoracion, setDecoracion] = useState('');
+
+  // Maneja el envío del formulario
+  const enviarQuote = async (e) => {
+    e.preventDefault(); // Previene el comportamiento por defecto de enviar el formulario
+
+    // Crea un objeto de cotización
+    const cotizacion = { tamañoPiñata, bolsitas, tipoBolsitas, mural, decoracion };
+
 
     try {
+      // Llama a la función para guardar la cotización en el db.json
     
-      await postProductos(nuevoProducto);
-
- 
-      toast.success("Producto agregado exitosamente!");
-
-      // Limpiar los campos del formulario
-      setNombre("");
-      setDescripcion("");
-      setTags("");
-      setImagen("");
-      setPrecio(""); 
+      const result = await postQuotes(cotizacion);
+      console.log('Cotización guardada:', result);
+      toast.success("Cotizacion enviada Exitosamente!")
     
+      // Aquí puedes mostrar un mensaje de éxito si lo deseas
     } catch (error) {
-      toast.error("Hubo un error al agregar el producto.");
+      console.error('Error al guardar la cotización:', error);
+        toast.error("Error al enviar la cotizacion")
+     
     }
   };
 
   return (
-    <form onSubmit={GuardarProductos}>
-      <div>
-        <label>Nombre del producto:</label>
-        <input
-          type="text"
-          value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label>Descripción:</label>
-        <textarea
-          value={descripcion}
-          onChange={(e) => setDescripcion(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label>Tags:</label>
-        <input
-          type="text"
-          value={tags}
-          onChange={(e) => setTags(e.target.value)}
-        />
-      </div>
-      <div>
-        <label>Imagen:</label>
-        <input
-          type="file"
-          accept="image/*"
-          onChange={submitImagen}
-        />
-      </div>
-      <div>
-        <label>Precio:</label>
-        <input
-          type="number"
-          step="0.01" // Permite precios con decimales
-          value={precio}
-          onChange={(e) => setPrecio(e.target.value)}
-          required
-        />
-      </div>
-      <button type="submit">Pedir Cotizacion</button>
+    <form className="containerQuote" onSubmit={enviarQuote}>
+      <h2>Cotización</h2>
+
+      <section>
+        <h3>Piñata</h3>
+        <label>
+          Tamaño:
+          <select value={tamañoPiñata} onChange={(e) => setTamañoPiñata(e.target.value)}>
+            <option value="">Selecciona</option>
+            <option value="30cm">30 cm</option>
+            <option value="45cm">45 cm</option>
+            <option value="60cm">60 cm</option>
+          </select>
+        </label>
+        <label>
+          Bolsitas de regalo:
+          <select value={bolsitas} onChange={(e) => setBolsitas(e.target.value)}>
+            <option value="">Selecciona</option>
+            <option value="10">10 bolsitas</option>
+            <option value="20">20 bolsitas</option>
+            <option value="30">30 bolsitas</option>
+          </select>
+        </label>
+        <label>
+          Tipo de bolsitas:
+          <select value={tipoBolsitas} onChange={(e) => setTipoBolsitas(e.target.value)}>
+            <option value="">Selecciona</option>
+            <option value="hechas a mano">Hechas a mano</option>
+            <option value="de tienda">De tienda</option>
+          </select>
+        </label>
+      </section>
+
+      <section>
+        <h3>Mural de Cumpleaños</h3>
+        <label>
+          Selecciona:
+          <select value={mural} onChange={(e) => setMural(e.target.value)}>
+            <option value="">Selecciona</option>
+            <option value="nombre">Nombre</option>
+            <option value="personaje">Personaje</option>
+            <option value="ambos">Ambos</option>
+          </select>
+        </label>
+      </section>
+
+      <section>
+        <h3>Decoración para la Fiesta</h3>
+        <label>
+          Tamaño:
+          <select value={decoracion} onChange={(e) => setDecoracion(e.target.value)}>
+            <option value="">Selecciona</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="plus">Plus</option>
+          </select>
+        </label>
+      </section>
+
+      <button type="submit">Enviar Cotización</button>
     </form>
   );
-}
+};
 
-export default FormAdmin;
-
-
-
-
-
-
+export default CotizacionForm;
 

@@ -12,7 +12,7 @@ function SideBar() {
         <Link id='linkEdit' to="/EditarCards">Editar Cards</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link id='linkImages' to="/Imagenes">Imagenes</Link>
+        <Link id='linkImages' to="/Cotizaciones">Cotizaciones</Link>
       </Nav.Item>
     </Nav>
   );

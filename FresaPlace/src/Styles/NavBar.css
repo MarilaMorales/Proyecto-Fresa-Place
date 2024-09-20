@@ -1,8 +1,12 @@
 
 .bg-body-tertiary {
-    background-color: #dacbe6;
+    background-color: #ff6437;
   }
   
+  #back_color{
+    background-color: #ff6437;
+  }
+
   .navbar-nav {
     flex-direction: row;
     justify-content: space-around; 

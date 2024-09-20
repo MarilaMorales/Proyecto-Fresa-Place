@@ -2,6 +2,11 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 
+
+
+
+
+
 const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,6 +22,11 @@ const ContactForm = () => {
       e.target.reset()
   };
 
+
+
+
+
+  
   return (
     <div>
       <div className="containerContact">

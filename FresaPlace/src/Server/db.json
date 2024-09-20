@@ -61,10 +61,16 @@
       }
     }
   ],
-
-  "quotes": [{
-
-  }],
+  "quotes": [
+    {
+      "id": "2380",
+      "tamañoPiñata": "30cm",
+      "bolsitas": "10",
+      "tipoBolsitas": "hechas a mano",
+      "mural": "nombre",
+      "decoracion": "small"
+    }
+  ],
   "productos": [
     {
       "id": "3cde",
