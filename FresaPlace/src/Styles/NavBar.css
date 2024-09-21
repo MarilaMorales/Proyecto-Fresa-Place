@@ -12,14 +12,16 @@
   }
   
   #back_color{
-    background-color: #FFB6A0 !important;
+    /* background-color: #FFB6A0 !important; */
+    background-color: rgb(127, 229, 255);
     
   }
 
   .navbar-nav {
     flex-direction: row;
     justify-content: space-around; 
-    background-color: #FFB6A0 !important;
+    /* background-color: #FFB6A0 !important; */
+    background-color: rgb(127, 229, 255);
   }
   
   .navbar-nav .nav-link {
