@@ -79,7 +79,7 @@ const EditarProductos = () => {
                     show={showModal}
                     CerrarModal={cerrarModal}
                     updateProducto={updateProducto}
-                    onSave={guardarCambios}
+                    guardaEditar={guardarCambios}
                 />
             )}
         </div>
@@ -186,7 +186,7 @@ export default EditarProductos;
 //                     show={showModal}
 //                     CerrarModal={cerrarModal}
 //                     updateProducto={updateProducto}
-//                     onSave={guardarCambios}
+//                     guardaEditar={guardarCambios}
 //                 />
 //             )}
 //         </div>

@@ -16,7 +16,7 @@ function NavBarInc() {
  
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid id='back_color'>
-          <Navbar.Brand href="/Principal">FRESA PLACE</Navbar.Brand>
+          <Navbar.Brand href="/Tienda">Tienda</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

@@ -10,6 +10,11 @@ import Contactenos from "../Pages/Contactenos.jsx"
 import AboutUs from "../Pages/AboutUs.jsx"
 import Decoracion from "../Pages/Decoracion.jsx"
 import Cotizaciones from "../Pages/Cotizaciones.jsx"
+import Tienda from "../Pages/Tienda.jsx"
+
+
+
+
 
 const Routing = () => {
   return (
@@ -26,6 +31,7 @@ const Routing = () => {
        <Route path="/Cotizaciones" element={<Cotizaciones />} />
        <Route path="/Contactenos" element={<Contactenos />} />
        <Route path="/AboutUs" element={<AboutUs />} />
+       <Route path="/Tienda" element={<Tienda />} />
       
      </Routes>
    );
