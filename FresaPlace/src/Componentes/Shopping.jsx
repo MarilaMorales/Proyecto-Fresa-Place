@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import CarruselProductos from "./CarruselTienda";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import "../Styles/CarruselTienda.css"
 import PaqueteInside from "../IMG/Paquetes/PaqueteInside.jpg"
 import Moana from "../IMG/Paquetes/Moana.jpg"

@@ -83,7 +83,7 @@ const agregarAdmins = () => {
                         <div key={admin.id} className="administrador">
                             {`Administrador: ${admin.email}`}
                             <div className="btnContainer">
-                                <Button onClick={() => eliminarAdministrador(admin)}>Eliminar</Button>
+                                <Button id='btnAdminDelete' onClick={() => eliminarAdministrador(admin)}>Eliminar</Button>
                             </div>
                         </div>
                     ))}

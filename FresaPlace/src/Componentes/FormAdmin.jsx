@@ -4,7 +4,7 @@ import { postProductos } from "../Services/post";
 import imageUpload64 from '../Controller/Convertobase64';
 import "../Styles/FormAdmin.css"
 import { toast } from 'react-toastify';
-import { Toast } from 'react-bootstrap';
+
 
 function FormAdmin() {
 
@@ -66,52 +66,57 @@ function FormAdmin() {
   };
 
   return (
-    <form onSubmit={GuardarProductos}>
-      <div>
-        <label>Nombre del producto:</label>
-        <input
-          type="text"
-          value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label>Descripción:</label>
-        <textarea
-          value={descripcion}
-          onChange={(e) => setDescripcion(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label>Tags:</label>
-        <input
-          type="text"
-          value={tags}
-          onChange={(e) => setTags(e.target.value)}
-        />
-      </div>
-      <div>
-        <label>Imagen:</label>
-        <input
-          type="file"
-          accept="image/*"
-          onChange={submitImagen}
-        />
-      </div>
-      <div>
-        <label>Precio:</label>
-        <input
-          type="number"
-          step="0.01" // Permite precios con decimales
-          value={precio}
-          onChange={(e) => setPrecio(e.target.value)}
-          required
-        />
-      </div>
-      <button type="submit">Agregar Producto</button>
-    </form>
+<form onSubmit={GuardarProductos}>
+  <div>
+    <label htmlFor="nombre">Nombre del producto:</label>
+    <input
+      id="nombre"
+      type="text"
+      value={nombre}
+      onChange={(e) => setNombre(e.target.value)}
+      required
+    />
+  </div>
+  <div>
+    <label htmlFor="descripcion">Descripción:</label>
+    <textarea
+      id="descripcion"
+      value={descripcion}
+      onChange={(e) => setDescripcion(e.target.value)}
+      required
+    />
+  </div>
+  <div>
+    <label htmlFor="tags">Tags:</label>
+    <input
+      id="tags"
+      type="text"
+      value={tags}
+      onChange={(e) => setTags(e.target.value)}
+    />
+  </div>
+  <div>
+    <label htmlFor="imagen">Imagen:</label>
+    <input
+      id="imagen"
+      type="file"
+      accept="image/*"
+      onChange={submitImagen}
+    />
+  </div>
+  <div>
+    <label htmlFor="precio">Precio:</label>
+    <input
+      id="precio"
+      type="number"
+      step="0.01"
+      value={precio}
+      onChange={(e) => setPrecio(e.target.value)}
+      required
+    />
+  </div>
+  <button type="submit" id="agregarProducto">Agregar Producto</button>
+</form>
   );
 }
 

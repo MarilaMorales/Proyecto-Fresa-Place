@@ -1,0 +1,54 @@
+.administradoresContainer {
+    padding: 20px;
+}
+
+.administradoresContainer2 {
+    margin-top: 20px;
+}
+
+.containerAdministradores {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; 
+}
+
+#btnAgregarAdmin {
+    padding: 10px 15px;
+    background-color: #9A27AA;
+}
+
+#contenedorAdministradores {
+    margin-top: 3rem; 
+}
+
+#btnAdminDelete{
+    background-color: #B445C4;
+}
+
+.administrador {
+    padding: 0.6rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center; 
+    /* background-color: #F89CBE; */
+
+    
+
+}
+
+.btnContainer {
+    margin-top: 0.6rem; 
+ 
+}
