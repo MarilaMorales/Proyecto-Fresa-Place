@@ -48,3 +48,18 @@ export const getQuotes = async () => {
         throw error;
     }
 };
+
+
+
+export const getAdmins = async () => {
+    try {
+        const response = await fetch('http://localhost:3000/Admins');
+        if (!response.ok) {
+            throw new Error("Error al obtener la lista de Administradores");
+        }
+        return await response.json();
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+};

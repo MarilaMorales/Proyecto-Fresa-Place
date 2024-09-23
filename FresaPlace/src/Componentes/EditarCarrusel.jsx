@@ -1,6 +1,9 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
-
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../Styles/CarruselTienda.css"
 
 
 
@@ -8,7 +11,7 @@ const EditarCarrusel = ({ show, CerrarModal, updateProducto }) => {
   return (
     <Modal show={show} onHide={CerrarModal}>
       <Modal.Header closeButton>
-        <Modal.Title>{updateProducto?.nombre || 'Detalles del Producto'}</Modal.Title>
+        <Modal.Title>{updateProducto?.nombre || "Detalles del Producto "}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <p><strong>Descripción:</strong> {updateProducto?.descripcion}</p>
