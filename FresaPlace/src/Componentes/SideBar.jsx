@@ -4,22 +4,49 @@ import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
-    <Nav defaultActiveKey="/home" className="flex-column">
+    <Nav defaultActiveKey="/home" className="sidebar flex-column">
       <Nav.Item>
-        <Link id='linkAdmin' to="/Administracion">Agregar Productos</Link>
+        <Link id='linkAdminUnique' to="/Administracion">Agregar Productos</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link id='linkImages' to="/AgregarAdministradores">Agregar Administradores</Link>
+        <Link id='linkImagesUnique' to="/AgregarAdministradores">Agregar Administradores</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link id='linkEdit' to="/EditarCards">Editar Cards</Link>
+        <Link id='linkEditUnique' to="/EditarCards">Editar Cards</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link id='linkImages' to="/Cotizaciones">Cotizaciones</Link>
+        <Link id='linkCotizacionesUnique' to="/Cotizaciones">Cotizaciones</Link>
       </Nav.Item>
-    
     </Nav>
   );
 }
 
 export default SideBar;
+
+
+
+// import Nav from 'react-bootstrap/Nav';
+// import "../Styles/Sidebar.css";
+// import { Link } from "react-router-dom"; 
+
+// function SideBar() {
+//   return (
+//     <Nav defaultActiveKey="/home" className="flex-column">
+//       <Nav.Item>
+//         <Link id='linkAdmin' to="/Administracion">Agregar Productos</Link>
+//       </Nav.Item>
+//       <Nav.Item>
+//         <Link id='linkImages' to="/AgregarAdministradores">Agregar Administradores</Link>
+//       </Nav.Item>
+//       <Nav.Item>
+//         <Link id='linkEdit' to="/EditarCards">Editar Cards</Link>
+//       </Nav.Item>
+//       <Nav.Item>
+//         <Link id='linkImages' to="/Cotizaciones">Cotizaciones</Link>
+//       </Nav.Item>
+    
+//     </Nav>
+//   );
+// }
+
+// export default SideBar;

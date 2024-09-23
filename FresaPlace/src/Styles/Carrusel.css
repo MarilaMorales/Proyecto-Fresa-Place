@@ -1,26 +1,25 @@
-.containerCarrusel {
-  position: relative;
-  overflow: hidden;
-  width: 70%;
-  height: 50hv; /* Ajusta según lo necesites */
-  margin: auto;
-  margin-top: 2rem;
+#carrusel-principal {
+  height: 500px; /* Cambia este valor según sea necesario */
+
+  margin-top: 4rem;
+  margin-bottom: 12rem;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
-.containerCarrusel .carousel-item {
-  transition: transform 1s ease, opacity 1s ease;
-  height: 100%;
+#carrusel-principal img {
+  height: 100%; /* Asegura que la imagen ocupe toda la altura */
+  object-fit: cover;
+  margin-bottom: 1.5rem;
 }
 
-.containerCarrusel img {
 
-  object-fit: contain; /* Mantiene el recorte */
-}
+#textoCarrusel{
+color: rgb(98, 224, 214);
+background-color: rgba(137, 43, 226, 0.349);
+width: 100%;
 
-.containerCarrusel .carousel-item {
-  opacity: 0;
-}
-
-.containerCarrusel .carousel-item.active {
-  opacity: 1;
 }

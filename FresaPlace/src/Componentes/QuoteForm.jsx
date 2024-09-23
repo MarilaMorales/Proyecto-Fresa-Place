@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import { postQuotes } from "../Services/post";
 import { toast } from 'react-toastify';
 import emailjs from 'emailjs-com'; 
-
-
-
-
+import "../Styles/QuoteForm.css"
 
 const CotizacionForm = () => {
   const [tamañoPiñata, setTamañoPiñata] = useState('');
@@ -14,20 +11,15 @@ const CotizacionForm = () => {
   const [mural, setMural] = useState('');
   const [decoracion, setDecoracion] = useState('');
 
-
-
   const enviarQuote = async (e) => {
     e.preventDefault();
-
     const cotizacion = { tamañoPiñata, bolsitas, tipoBolsitas, mural, decoracion };
 
     try {
-      // Guarda la cotización en el db.json
       const result = await postQuotes(cotizacion);
       console.log("Cotización guardada:", result);
       toast.success("Cotizacion enviada Exitosamente!");
 
-      // Enviar el correo a través de EmailJS
       const templateParams = {
         to_name: "Cliente", 
         from_name: "Tu Nombre", 
@@ -45,31 +37,31 @@ const CotizacionForm = () => {
 
   return (
     <form className="containerQuote" onSubmit={enviarQuote}>
-      <h2>Cotización</h2>
+      <h2 id='CotizacionText'>Cotización</h2>
 
       <section>
         <h3>Piñata</h3>
-        <label>
+        <label id='labelQuote' htmlFor="tamañoPiñata">
           Tamaño:
-          <select value={tamañoPiñata} onChange={(e) => setTamañoPiñata(e.target.value)}>
+          <select id="tamañoPiñata" value={tamañoPiñata} onChange={(e) => setTamañoPiñata(e.target.value)}>
             <option value="">Selecciona</option>
             <option value="30cm">30 cm</option>
             <option value="45cm">45 cm</option>
             <option value="60cm">60 cm</option>
           </select>
         </label>
-        <label>
+        <label id='labelQuote' htmlFor="bolsitas">
           Bolsitas de regalo:
-          <select value={bolsitas} onChange={(e) => setBolsitas(e.target.value)}>
+          <select id="bolsitas" value={bolsitas} onChange={(e) => setBolsitas(e.target.value)}>
             <option value="">Selecciona</option>
             <option value="10">10 bolsitas</option>
             <option value="20">20 bolsitas</option>
             <option value="30">30 bolsitas</option>
           </select>
         </label>
-        <label>
+        <label id='labelQuote' htmlFor="tipoBolsitas">
           Tipo de bolsitas:
-          <select value={tipoBolsitas} onChange={(e) => setTipoBolsitas(e.target.value)}>
+          <select id="tipoBolsitas" value={tipoBolsitas} onChange={(e) => setTipoBolsitas(e.target.value)}>
             <option value="">Selecciona</option>
             <option value="hechas a mano">Hechas a mano</option>
             <option value="de tienda">De tienda</option>
@@ -79,9 +71,9 @@ const CotizacionForm = () => {
 
       <section>
         <h3>Mural de Cumpleaños</h3>
-        <label>
+        <label id='labelQuote' htmlFor="mural">
           Selecciona:
-          <select value={mural} onChange={(e) => setMural(e.target.value)}>
+          <select id="mural" value={mural} onChange={(e) => setMural(e.target.value)}>
             <option value="">Selecciona</option>
             <option value="nombre">Nombre</option>
             <option value="personaje">Personaje</option>
@@ -92,9 +84,9 @@ const CotizacionForm = () => {
 
       <section>
         <h3>Decoración para la Fiesta</h3>
-        <label>
+        <label id='labelQuote' htmlFor="decoracion">
           Tamaño:
-          <select value={decoracion} onChange={(e) => setDecoracion(e.target.value)}>
+          <select id="decoracion" value={decoracion} onChange={(e) => setDecoracion(e.target.value)}>
             <option value="">Selecciona</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
@@ -103,7 +95,7 @@ const CotizacionForm = () => {
         </label>
       </section>
 
-      <button type="submit">Enviar Cotización</button>
+      <button id='btnQuote' type="submit">Enviar Cotización</button>
     </form>
   );
 };
