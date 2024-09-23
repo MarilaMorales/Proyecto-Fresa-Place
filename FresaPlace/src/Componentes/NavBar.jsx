@@ -25,11 +25,11 @@ function NavBarInc() {
               <Nav.Link href="/Adornos">Adornos</Nav.Link>
 
               <NavDropdown title="Articulos de Fiesta" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Paquetes</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.1">Piñatas</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.1">Murales</NavDropdown.Item>
+                <NavDropdown.Item href="/Paquetes">Paquetes</NavDropdown.Item>
+                <NavDropdown.Item href="/Piñatas">Piñatas</NavDropdown.Item>
+                <NavDropdown.Item href="/Murales">Murales</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/Cotizaciones">
                   Cotice
                 </NavDropdown.Item>
               </NavDropdown>

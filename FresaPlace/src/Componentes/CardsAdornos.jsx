@@ -18,7 +18,7 @@ function CardAdornos() {
         const productosFiltrados = productos.filter(producto => producto.tags === 'Adorno');
         setProductos(productosFiltrados);
       } catch (error) {
-        console.error('Error al filtrar los prodctps:', error);
+        console.error('Error al filtrar los prodctos:', error);
       }
     }
 
