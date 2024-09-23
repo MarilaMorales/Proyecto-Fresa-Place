@@ -5,6 +5,7 @@ import CarruselPrinc from '../Componentes/CarruselPrinc'
 import Footer from "../Componentes/Footer"
 import "../Styles/Principal.css"
 import PictureText from "../Componentes/PictureText"
+import CardsDescuento from "../Componentes/CardsDescuento"
 
 
 
@@ -19,6 +20,7 @@ function Principal() {
       <NavBarInc />
       <PictureText />
       <CarruselPrinc />
+      <CardsDescuento />
       <Footer />
     </div>
   )
