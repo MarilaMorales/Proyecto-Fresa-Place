@@ -49,20 +49,4 @@ const CarruselProductos = ({ productos, abrirModal, Cart }) => {
 
 
 
-
-//   return (
-//     <div className="carrusel-productos">
-//       <Slider {...settings}>
-//         {productos.map((producto) => (
-//           <div key={producto.id} className="producto-item" onClick={() => abrirModal(producto)}>
-//             <img src={producto.imagen} alt={producto.nombre} className="producto-imagen" />
-//             <h3>{producto.nombre}</h3>
-//             <p>{producto.precio} USD</p>
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-
-
 export default CarruselProductos;

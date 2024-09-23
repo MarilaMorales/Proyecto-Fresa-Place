@@ -9,7 +9,7 @@ function SideBar() {
         <Link id='linkAdmin' to="/Administracion">Agregar Productos</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link id='linkImages' to="/AgregarAdmins">Agregar Administradores</Link>
+        <Link id='linkImages' to="/AgregarAdministradores">Agregar Administradores</Link>
       </Nav.Item>
       <Nav.Item>
         <Link id='linkEdit' to="/EditarCards">Editar Cards</Link>

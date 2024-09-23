@@ -11,6 +11,7 @@ import AboutUs from "../Pages/AboutUs.jsx"
 import Decoracion from "../Pages/Decoracion.jsx"
 import Cotizaciones from "../Pages/Cotizaciones.jsx"
 import Tienda from "../Pages/Tienda.jsx"
+import AgregarAdministradores from "../Pages/AgregarAdministradores.jsx"
 
 
 
@@ -32,6 +33,7 @@ const Routing = () => {
        <Route path="/Contactenos" element={<Contactenos />} />
        <Route path="/AboutUs" element={<AboutUs />} />
        <Route path="/Tienda" element={<Tienda />} />
+       <Route path="/AgregarAdministradores" element={<AgregarAdministradores />} />
       
      </Routes>
    );

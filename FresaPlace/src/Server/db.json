@@ -61,9 +61,12 @@
       }
     }
   ],
-
-   "Admins":[],
-
+  "Admins": [
+    {
+      "id": "b8f4",
+      "email": "jennifer@fresaplace.com"
+    }
+  ],
   "quotes": [
     {
       "id": "2380",
