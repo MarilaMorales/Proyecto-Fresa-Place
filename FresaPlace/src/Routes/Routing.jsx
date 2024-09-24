@@ -16,6 +16,7 @@ import Cotizaciones from "../Pages/Cotizaciones.jsx"
 import Tienda from "../Pages/Tienda.jsx"
 import AgregarAdministradores from "../Pages/AgregarAdministradores.jsx"
 import Pinatas from "../Pages/Pinatas.jsx"
+import Protect from "../ProtectedRoute.jsx";
 
 
 
@@ -31,17 +32,20 @@ const Routing = () => {
        <Route path="/Principal" element={<Principal />} />
        <Route path="/Escolar" element={<Escolar />} />
        <Route path="/Murales" element={<Murales />} />
-       <Route path="/Pinata" element={<Pinatas />} />
+       <Route path="/Pinatas" element={<Pinatas />} />
        <Route path="/Adornos" element={<Adornos />} />
        <Route path="/Paquetes" element={<Paquetes />} />
        <Route path="/Decoracion" element={<Decoracion />} />
-       <Route path="/Administracion" element={<Administracion />} />
        <Route path="/EditarCards" element={<EditarCards />} />
        <Route path="/Cotizaciones" element={<Cotizaciones />} />
        <Route path="/Contactenos" element={<Contactenos />} />
        <Route path="/AboutUs" element={<AboutUs />} />
        <Route path="/Tienda" element={<Tienda />} />
-       <Route path="/AgregarAdministradores" element={<AgregarAdministradores />} />
+       {/* <Route path="/Administracion" element={<Administracion />} />
+       <Route path="/AgregarAdministradores" element={<AgregarAdministradores />} /> */}
+       <Route path="/AgregarAdministradores" element={<Protect><AgregarAdministradores /></Protect>}/>
+       <Route path="/Administracion" element={<Protect><Administracion/></Protect>}/>
+       <Route path="/EditarCards" element={<Protect><EditarCards /></Protect>}/>
       
      </Routes>
    );

@@ -4,8 +4,6 @@ import { postUser } from '../Services/post';
 import { getUsers } from "../Services/get";
 import { useNavigate } from "react-router-dom";
 import '../Styles/Registro.css';
-import { toast } from 'react-toastify';
-
 
 
 
@@ -20,9 +18,6 @@ function FormRegistro() {
   const [users, setUsers] = useState([]);
   const navigate = useNavigate();
 
-
-
-//el useEffect esta vacio para que solo lo haga 1 vez y no se encicle.
   useEffect(() => {
     const fetchUsers = async () => {
       try {
@@ -35,12 +30,16 @@ function FormRegistro() {
     fetchUsers();
   }, []);  
 
+  
+
+
+
+
+
 
 
   const guardarUser = async (e) => {
     e.preventDefault();
-
-
     setMessage(''); 
   
     if (!username || !email || !password || !confirmPassword) {
@@ -53,7 +52,6 @@ function FormRegistro() {
       return;
     }
   
-    // Verificar si el usuario ya existe
     const validarUser = users.find(user => user.correo === email);
   
     if (validarUser) {
@@ -62,32 +60,31 @@ function FormRegistro() {
     }
   
     try {
-
-      const userObjeto = {
-        nombre: username,
-        correo: email,
-        password: password
+      // Aquí es donde está el error
+      const UsuarioFresa = { 
+        nombre: username, // Este es el nombre del usuario
+        correo: email, 
+        password: password 
       };
   
-
-
-      
-      // Registrar nuevo usuario con el formato correcto
-      await postUser(userObjeto);
-      toast.success ("¡Registro exitoso!");
+      await postUser(UsuarioFresa);
+      setMessage("¡Registro exitoso!");
       navigate("/login"); 
   
       setUsername('');
       setEmail('');
       setPassword('');
       setConfirmPassword('');
-
       
     } catch (error) {
       console.error("Error en el Registro", error);
       setMessage("Error");
     }
   };
+  
+
+
+
 
 
 
@@ -95,15 +92,15 @@ function FormRegistro() {
 
   return (
     <MDBContainer fluid className='my-5'>
-      <MDBRow className='g-0 align-items-center'>
-        <MDBCol md='6'>
-          <MDBCard className='my-5 cascading-right' style={{background: 'hsla(0, 0%, 100%, 0.55)', backdropFilter: 'blur(30px)'}}>
+      <MDBRow className='g-0 justify-content-center'>
+        <MDBCol md='11'>
+          <MDBCard className='my-5' style={{background: 'hsla(0, 0%, 100%, 0.55)', backdropFilter: 'blur(30px)'}}>
             <MDBCardBody className='p-5 shadow-5 text-center'>
               <h2 className="fw-bold mb-5">Sign up now</h2>
 
               <form onSubmit={guardarUser}>
                 <MDBRow>
-                  <MDBCol md='6'>
+                  <MDBCol md='8'>
                     <MDBInput
                       wrapperClass='mb-4'
                       label='Username'
@@ -147,14 +144,7 @@ function FormRegistro() {
                   required
                 />
 
-                <div className='d-flex justify-content-center mb-4'>
-                  <MDBCheckbox
-                    name='flexCheck'
-                    value=''
-                    id='flexCheckDefault'
-                    label='Subscribe to our newsletter'
-                  />
-                </div>
+   
 
                 <MDBBtn className='w-100 mb-4' size='md' type='submit'>
                   Sign up
@@ -163,31 +153,9 @@ function FormRegistro() {
                 {message && <div className="alert" style={{ color: 'red' }}>{message}</div>}
               </form>
 
-              <div className="text-center mt-4">
-                <p>or sign up with:</p>
 
-                <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
-                  <MDBIcon fab icon='facebook-f' size="sm"/>
-                </MDBBtn>
-
-                <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
-                  <MDBIcon fab icon='twitter' size="sm"/>
-                </MDBBtn>
-
-                <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
-                  <MDBIcon fab icon='google' size="sm"/>
-                </MDBBtn>
-
-                <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
-                  <MDBIcon fab icon='github' size="sm"/>
-                </MDBBtn>
-              </div>
             </MDBCardBody>
           </MDBCard>
-        </MDBCol>
-
-        <MDBCol md='6'>
-          {/* <img src="Mandala" className="w-100 rounded-4 shadow-4 img-fluid" alt="Sample"/> */}
         </MDBCol>
       </MDBRow>
     </MDBContainer>

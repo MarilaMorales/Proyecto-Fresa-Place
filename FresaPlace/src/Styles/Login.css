@@ -1,25 +1,29 @@
+
+
 .gradient-custom-2 {
     /* fallback for old browsers */
     background: #fccb90;
   
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, #109db6, #0d9196, #3684dd, #5bcce0);
+    background: -webkit-linear-gradient(to right, #FFB6A0, #F172A1, #E94F88, #FF6437);
   
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, #057a61, #16adb3, #098a8f,  #057a61);
+    background: linear-gradient(to right, #FFB6A0, #F172A1, #E94F88, #FF6437);
   }
 
   #mensajeAlert{
     color: red;
     font-size: 1rem;
-    background-color: rgb(157, 219, 230);
-    font-weight: 400;
+
+    font-weight: 700;
     width: 55%;
     padding-left: 0.5rem;
     margin-left: 8rem;
   }
 
-
+  #TextoLogin{
+    color: #E94F88;
+  }
   @media (min-width: 768px) {
     .gradient-form {
       height: 100vh !important;

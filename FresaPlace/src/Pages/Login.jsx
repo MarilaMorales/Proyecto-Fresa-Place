@@ -4,9 +4,10 @@ import FormLogin from '../Componentes/FormLogin'
 
 
 
+
 function Login() {
   return (
-    <div>
+    <div className='FondoLogin'>
       <FormLogin />
     </div>
   )

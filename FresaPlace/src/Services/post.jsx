@@ -1,30 +1,24 @@
-async function postUser(nombre, correo, password) {
+export const postUser = async (user) => {
     try {
-        let nuevoUsuario = {
-            nombre,
-            correo,
-            password
-        };
-
-        let response = await fetch("http://localhost:3000/users", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(nuevoUsuario)
-        });
-
-        if (!response.ok) {
-            throw new Error("No se pudo guardar el usuario");
-        }
-
-        let data = await response.json();
-        console.log("Usuario guardado con éxito:", data);
+      const response = await fetch('http://localhost:3000/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user)
+      });
+  
+      if (!response.ok) {
+        throw new Error('Error al registrar el usuario');
+      }
+  
+      return await response.json();
     } catch (error) {
-        console.error('No se pudo guardar el usuario:', error);
+      console.error('Error al guardar el usuario:', error);
+      throw error;
     }
-}
-
+  };
+  
 
 
 
@@ -70,14 +64,14 @@ export const postQuotes = async (quotes) => {
     }
 };
 
-export const postAdmins = async (quotes) => {
+export const postAdmins = async (Admins) => {
     try {
         const response = await fetch("http://localhost:3000/Admins", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(quotes),
+            body: JSON.stringify(Admins),
         });
         if (!response.ok) {
             throw new Error("Error al agregar el Administrador");
@@ -93,4 +87,4 @@ export const postAdmins = async (quotes) => {
 
 
 
-export {postUser}
+// export {postUser}
