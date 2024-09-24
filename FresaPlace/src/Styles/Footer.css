@@ -1,5 +1,63 @@
 .footer {
     background-color: #FDCEDF;
+    color: rgb(130, 9, 167);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 2.5rem; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    transition: transform 0.2s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+  }
+  
+  .footer-message {
+    margin-top: 2rem;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer {
+    background-color: #FDCEDF;
     color: #B445C4;
     text-align: center;
     padding: 20px 0;
@@ -45,4 +103,4 @@ footer {
     height: 2rem;
     width: 100vw;
     background-color: #DF3071;
-  }
+  } */

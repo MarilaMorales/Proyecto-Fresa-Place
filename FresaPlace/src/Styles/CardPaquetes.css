@@ -1,0 +1,40 @@
+#fondo12{
+    background-color: #F89CBE;
+}
+
+.card-custom {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 300px; 
+    height: 500px; 
+    margin: 1rem; 
+  }
+  
+  .card-custom:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-img-custom {
+    border-radius: 15px 15px 0 0;
+    height: 200px; 
+    object-fit: cover; 
+    transition: transform 0.3s; 
+ 
+  }
+  
+  .card-img-custom:hover {
+    transform: scale(1.05); 
+  }
+  
+  #descriPaquetes {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF7D57;
+  }
+  
+  .card-text {
+    color: #34495e; 
+  }
