@@ -23,6 +23,8 @@ function NavBarInc() {
             <Nav.Link href="/Escolar">Escolar</Nav.Link>
             <Nav.Link href="/Decoracion">Decoracion</Nav.Link>
             <Nav.Link href="/Adornos">Adornos</Nav.Link>
+            <Nav.Link href="/Contactenos">Contactenos</Nav.Link>
+            <Nav.Link href="/AboutUs">AboutUs</Nav.Link>
 
             <NavDropdown title="Articulos de Fiesta" id="basic-nav-dropdown">
               <NavDropdown.Item href="/Paquetes">Paquetes</NavDropdown.Item>
