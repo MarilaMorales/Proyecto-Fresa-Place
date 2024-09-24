@@ -15,6 +15,13 @@
   justify-content: center;
   align-items: center;
   background-color: aqua;
+  background-image: url("../IMG/login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+
 
 }
 

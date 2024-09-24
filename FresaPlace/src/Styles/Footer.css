@@ -1,9 +1,24 @@
 .footer {
-    background-color: #FDCEDF;
-    color: rgb(130, 9, 167);
-    text-align: center;
-    padding: 20px;
-  }
+  background-image: url("../IMG/footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(130, 9, 167);
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Añadido para el borde */
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Ajusta la posición vertical del borde */
+  left: 0;
+  right: 0;
+  height: 10px; /* Altura del borde */
+  background: rgb(148, 234, 255); /* Color rosado con opacidad */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  z-index: -1; /* Asegura que esté detrás del contenido */
+}
   
   .social-icons {
     margin-bottom: 10px;
@@ -29,7 +44,14 @@
     margin: 10px 0;
   }
   
-
+  #LogoFooter {
+    position: absolute; /* Permite que el logo se coloque en la parte derecha */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior */
+    height: 10rem; /* Ajusta la altura del logo según necesites */
+  }
+  
+ 
 
 
 

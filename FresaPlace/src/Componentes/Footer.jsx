@@ -3,7 +3,7 @@ import WhatsApp from "../IMG/WhatsApp.png"
 import Instagram from "../IMG/Instagram.png"
 import Facebook from "../IMG/Facebook.png"
 import "../Styles/Footer.css"
-
+import LogoTransparente from "../IMG/LogoTransparente.png"
 
 const Mensaje = () => {
   const messages = [
@@ -46,7 +46,7 @@ const Footer = () => {
         </a>
       </div>
       <Mensaje />
-
+      <img id='LogoFooter' src={LogoTransparente} alt="" />
     </footer>
   );
 };

@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import React from "react";
 import "../Styles/CarruselTienda.css"
-import Cart from "../Componentes/Cart";
+
 
 const CarruselProductos = ({ productos, abrirModal, Cart }) => {
   const settings = {
@@ -38,7 +38,6 @@ const CarruselProductos = ({ productos, abrirModal, Cart }) => {
             <img src={producto.imagen} alt={producto.nombre} className="producto-imagen" />
             <h3>{producto.nombre}</h3>
             <p>{producto.precio} Colones</p>
-            <button onClick={() => agregarAlCarrito(producto)}>Add to Cart</button>
             <div onClick={() => abrirModal(producto)}>View Details</div>
           </div>
         ))}

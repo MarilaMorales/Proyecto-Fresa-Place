@@ -22,9 +22,7 @@ const EditarCarrusel = ({ show, CerrarModal, updateProducto }) => {
         <Button variant="secondary" onClick={CerrarModal}>
           Cerrar
         </Button>
-        <Button variant="primary">
-          Guardar cambios
-        </Button>
+       
       </Modal.Footer>
     </Modal>
   );

@@ -6,6 +6,7 @@ import Moana from "../IMG/Paquetes/Moana.jpg"
 import Minnie from "../IMG/Paquetes/Minnie.jpg"
 import PaqueteBluey from "../IMG/Paquetes/PaqueteBluey.webp"
 import EditarCarrusel from "./EditarCarrusel";
+import Tiendita from "../IMG/Tiendita.png"
 
 
 
@@ -16,28 +17,28 @@ const Tienda = () => {
     {
       id: 1,
       nombre: "Paquete Minnie",
-      precio: 35.000,
+      precio: 35000,
       descripcion: "Incluye: 1 pancarta de feliz cumpleaños, 1 adorno para pastel, 24 adornos para cupcakes, 20 globos de látex, Piñata de 30cm, Mural de Nombre ",
       imagen: Minnie, 
     },
     {
       id: 2,
       nombre: "Paquete de Inside Out",
-      precio: 80.000,
+      precio: 80000,
       descripcion: "Incluye: 1 pancarta de feliz cumpleaños, 25 bolsitas a mano, 100 globos con diseño, 1 adorno para pastel, 24 adornos para cupcakes, Piñata de 30cm, Mural de Nombre ",
       imagen: PaqueteInside,
     },
     {
       id: 3,
       nombre: "Paquete Bluey",
-      precio: 45.000,
+      precio: 45000,
       descripcion: "Incluye: 1 pancarta de feliz cumpleaños, 15 bolsitas, 1 adorno para pastel, 24 adornos para cupcakes, 20 globos de látex, Piñata de 60cm, Mural de Nombre ",
       imagen: PaqueteBluey,
     },
     {
       id: 4,
       nombre: "Paquete Moanna",
-      precio: 19.99,
+      precio: 20000,
       descripcion: "Incluye: 1 pancarta de feliz cumpleaños,15 bolsitas,  1 adorno para pastel, 24 adornos para cupcakes, 20 globos de látex, Piñata de 30cm, Mural de Personaje y Nombre",
       imagen: Moana,
     },
@@ -64,8 +65,8 @@ const Tienda = () => {
 
 
   return (
-    <div>
-      <h2>Tienda de Productos</h2>
+    <div id="fondoTienda">
+      <img id="tienditaPic" src={Tiendita} alt="" />
       <CarruselProductos productos={productos} abrirModal={abrirModal} />
 
       {updateProducto && (

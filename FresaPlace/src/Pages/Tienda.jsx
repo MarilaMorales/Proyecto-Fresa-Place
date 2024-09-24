@@ -4,6 +4,7 @@ import CardDecoracion from '../Componentes/CardsDecoracion';
 import Shopping from "../Componentes/Shopping"
 import "../Styles/CarruselTienda.css"
 import Footer from '../Componentes/Footer';
+import NavBarInc from '../Componentes/NavBar';
 
 
 
@@ -14,8 +15,8 @@ function Tienda() {
   return (
     <div>
       <Header />
+      <NavBarInc /> 
       <Shopping />
-      <CardDecoracion />
       <Footer />
     </div>
   )
