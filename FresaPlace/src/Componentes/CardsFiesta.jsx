@@ -18,7 +18,7 @@ function CardFiestas() {
         const productosFiltrados = productos.filter(producto => producto.tags === 'Fiesta');
         setProductos(productosFiltrados);
       } catch (error) {
-        console.error('Error al filtrar los prodctps:', error);
+        console.error('Error al filtrar los productos:', error);
       }
     }
 

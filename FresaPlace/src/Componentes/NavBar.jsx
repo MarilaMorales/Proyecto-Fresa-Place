@@ -26,7 +26,7 @@ function NavBarInc() {
 
               <NavDropdown title="Articulos de Fiesta" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/Paquetes">Paquetes</NavDropdown.Item>
-                <NavDropdown.Item href="/Piñatas">Piñatas</NavDropdown.Item>
+                <NavDropdown.Item href="/Pinatas">Pinatas</NavDropdown.Item>
                 <NavDropdown.Item href="/Murales">Murales</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/Cotizaciones">

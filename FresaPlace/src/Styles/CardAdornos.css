@@ -1,0 +1,36 @@
+.card-custom {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Tamaño fijo */
+    height: 400px; /* Ajusta según lo que necesites */
+    margin: 1rem; /* Margen para separación */
+  }
+  
+  .card-custom:hover {
+    transform: translateY(-5px); /* Levanta la tarjeta al pasar el ratón */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Sombra más fuerte al hover */
+  }
+  
+  .card-img-custom {
+    border-radius: 15px 15px 0 0;
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s; /* Transición suave para el efecto de hover */
+  }
+  
+  .card-img-custom:hover {
+    transform: scale(1.05); /* Efecto de zoom en la imagen al pasar el ratón */
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50; /* Color oscuro */
+  }
+  
+  .card-text {
+    color: #34495e; /* Color más claro para el texto */
+  }
+  

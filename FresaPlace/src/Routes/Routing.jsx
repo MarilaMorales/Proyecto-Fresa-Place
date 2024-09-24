@@ -5,6 +5,7 @@ import Registro from '../Pages/Registro.jsx';
 import Administracion from '../Pages/Administracion.jsx';
 import Principal from '../Pages/Principal.jsx';
 import Adornos from '../Pages/Adornos.jsx';
+import Escolar from "../Pages/Escolar.jsx"
 import EditarCards from '../Pages/EditarCards.jsx';
 import Contactenos from "../Pages/Contactenos.jsx"
 import AboutUs from "../Pages/AboutUs.jsx"
@@ -12,6 +13,7 @@ import Decoracion from "../Pages/Decoracion.jsx"
 import Cotizaciones from "../Pages/Cotizaciones.jsx"
 import Tienda from "../Pages/Tienda.jsx"
 import AgregarAdministradores from "../Pages/AgregarAdministradores.jsx"
+import Pinatas from "../Pages/Pinatas.jsx"
 
 
 
@@ -25,6 +27,8 @@ const Routing = () => {
        <Route path="/Registro" element={<Registro />} />
        <Route path="/Login" element={<Login />} />
        <Route path="/Principal" element={<Principal />} />
+       <Route path="/Escolar" element={<Escolar />} />
+       <Route path="/Pinata" element={<Pinatas />} />
        <Route path="/Adornos" element={<Adornos />} />
        <Route path="/Decoracion" element={<Decoracion />} />
        <Route path="/Administracion" element={<Administracion />} />
