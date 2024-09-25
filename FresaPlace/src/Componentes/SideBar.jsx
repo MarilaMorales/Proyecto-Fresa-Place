@@ -14,9 +14,6 @@ function SideBar() {
       <Nav.Item>
         <Link id='linkEditUnique' to="/EditarCards">Editar Cards</Link>
       </Nav.Item>
-      <Nav.Item>
-        <Link id='linkCotizacionesUnique' to="/Cotizaciones">Cotizaciones</Link>
-      </Nav.Item>
     </Nav>
   );
 }

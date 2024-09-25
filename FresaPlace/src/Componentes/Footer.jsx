@@ -35,13 +35,13 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="social-icons">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/profile.php?id=61565317138531" target="_blank" rel="noopener noreferrer">
           <img src={Facebook} alt="Facebook" />
         </a>
         <a href="https://wa.me/yourwhatsappnumber" target="_blank" rel="noopener noreferrer">
           <img src={WhatsApp} alt="WhatsApp" />
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/fresa_place/reels/" target="_blank" rel="noopener noreferrer">
           <img src={Instagram} alt="Instagram" />
         </a>
       </div>

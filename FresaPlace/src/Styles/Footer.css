@@ -8,130 +8,95 @@
   position: relative; 
   height: 12rem;
   margin-top: 4rem;
-  
 } 
 
 .footer::before {
   content: "";
   position: absolute;
-  top: -10px; /* Ajusta la posición vertical del borde */
+  top: -10px; 
   left: 0;
   right: 0;
-  height: 10px; /* Altura del borde */
+  height: 10px; 
   background: #FFB6A0; 
   z-index: -1; 
 }
   
-  .social-icons {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+.social-icons {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+  
+.social-icons a {
+  margin: 0 10px;
+}
+  
+.social-icons img {
+  width: 2.5rem; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  transition: transform 0.2s;
+}
+  
+.social-icons img:hover {
+  transform: scale(1.1); /* Efecto al pasar el mouse */
+}
+  
+.footer-message {
+  margin-top: 2rem;
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+  
+#LogoFooter {
+  position: absolute; 
+  right: 20px; 
+  bottom: 10px;
+  height: 11rem; 
+  margin-top: 12px;
+}
 
-  }
-  
-  .social-icons a {
-    margin: 0 10px;
-  }
-  
-  .social-icons img {
-    width: 2.5rem; /* Ajusta el tamaño según tus necesidades */
-    height: auto;
-    transition: transform 0.2s;
 
-  }
+@media (max-width: 768px) {
+  .footer {
+    height: auto; 
+    padding: 15px;
   
-  .social-icons img:hover {
-    transform: scale(1.1); /* Efecto al pasar el mouse */
   }
-  
+
   .footer-message {
-    margin-top: 2rem;
-    font-size: 22px;
-    margin: 10px 0;
-    font-weight: 600;
+    font-size: 20px; 
   }
-  
+
   #LogoFooter {
-    position: absolute; 
-    right: 20px; 
-    bottom: 10px;
-    height: 11rem; 
-    margin-top: 12px;
-
-
+  display: none;
   }
-  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .footer {
-    background-color: #FDCEDF;
-    color: #B445C4;
-    text-align: center;
-    padding: 20px 0;
 }
 
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.footer p {
-    margin: 10px 0;
-}
-
-.socials {
-    margin-top: 10px;
-}
-
-.socials a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.socials a:hover {
-    text-decoration: underline;
-}
-
-
-footer {
-    background-color: #F172A1; 
-  
-    color: #FFFFFF; 
-    text-align: center;
-    height: 9rem;
-    width: 100vw;
+@media (max-width: 576px) {
+  .footer-message {
+    font-size: 18px; 
+    margin-top: 1rem; 
   }
-  
- footer h1 {
-    font-size: 1.2rem;
-    font-family: cursive;
-    padding-top: 0.3rem;
-    height: 2rem;
-    width: 100vw;
-    background-color: #DF3071;
-  } */
+
+  .social-icons img {
+    width: 2rem; 
+  }
+
+  #LogoFooter {
+    height: 6rem; 
+    bottom: 5px; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
