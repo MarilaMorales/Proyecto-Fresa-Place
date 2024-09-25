@@ -16,7 +16,7 @@ const ModalResults = ({ show, handleClose, results }) => {
                             <Card.Body>
                                 <Card.Title>{producto.nombre}</Card.Title>
                                 <Card.Text>{producto.descripcion}</Card.Text>
-                                <Button variant="primary">Detalles</Button>
+                             
                             </Card.Body>
                         </Card>
                     ))

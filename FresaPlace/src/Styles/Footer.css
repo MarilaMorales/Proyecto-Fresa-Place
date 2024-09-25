@@ -2,10 +2,13 @@
   background-image: url("../IMG/footer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(130, 9, 167);
+  color: rgb(145, 29, 180);
   text-align: center;
   padding: 20px;
   position: relative; /* Añadido para el borde */
+  height: 12rem;
+  margin-top: 4rem;
+  
 }
 
 .footer::before {
@@ -15,13 +18,14 @@
   left: 0;
   right: 0;
   height: 10px; /* Altura del borde */
-  background: rgb(148, 234, 255); /* Color rosado con opacidad */
-  backdrop-filter: blur(10px); /* Efecto de desenfoque */
-  z-index: -1; /* Asegura que esté detrás del contenido */
+  background: #FFB6A0; 
+  z-index: -1; 
 }
   
   .social-icons {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
   }
   
   .social-icons a {
@@ -32,6 +36,7 @@
     width: 2.5rem; /* Ajusta el tamaño según tus necesidades */
     height: auto;
     transition: transform 0.2s;
+
   }
   
   .social-icons img:hover {
@@ -40,15 +45,21 @@
   
   .footer-message {
     margin-top: 2rem;
-    font-size: 20px;
+    font-size: 22px;
     margin: 10px 0;
+    font-weight: 600;
   }
   
   #LogoFooter {
-    position: absolute; /* Permite que el logo se coloque en la parte derecha */
-    right: 20px; /* Ajusta la distancia desde el borde derecho */
-    bottom: 10px; /* Ajusta la distancia desde el borde inferior */
-    height: 10rem; /* Ajusta la altura del logo según necesites */
+    position: absolute; 
+    right: 20px; 
+    bottom: 10px;
+    height: 12rem; 
+    /* background-image: url("../IMG/FooterLogoTrans.png");
+    background-repeat: no-repeat;
+    background-position: center center; */
+
+
   }
   
  

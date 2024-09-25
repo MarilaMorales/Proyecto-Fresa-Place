@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import { getProductos } from '../Services/get';
 import React, { useState, useEffect } from 'react';
-import "../Styles/CardEscolar.css"
+// import "../Styles/CardEscolar.css"
 
 function CardEscolar() {
   const [productos, setProductos] = useState([]);
@@ -22,7 +22,7 @@ function CardEscolar() {
   return (
     <div className="d-flex flex-wrap justify-content-center">
       {productos.map(producto => (
-        <Card key={producto.id} id={`card-adorno-${producto.id}`} className="card-custom">
+        <Card key={producto.id} id={`card-adorno-${producto.id}`} className="card-custom shadow">
           <Card.Img className="card-img-custom" variant="top" src={producto.imagen} />
           <Card.Body>
             <Card.Title>{producto.nombre}</Card.Title>

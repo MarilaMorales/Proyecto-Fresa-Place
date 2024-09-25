@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { getProductos } from '../Services/get';
 import React, { useState, useEffect } from 'react';
-import "../Styles/CardAdornos.css"
+// import "../Styles/CardAdornos.css"
 
 function CardAdornos() {
   const [productos, setProductos] = useState([]);

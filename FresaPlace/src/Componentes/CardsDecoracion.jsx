@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import { getProductos } from '../Services/get';
 import React, { useState, useEffect } from 'react';
-import "../Styles/CardDecoracion.css"
+// import "../Styles/CardDecoracion.css"
 
 function CardDecoracion() {
   const [productos, setProductos] = useState([]);
