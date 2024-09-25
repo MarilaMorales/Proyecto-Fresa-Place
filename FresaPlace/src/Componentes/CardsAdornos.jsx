@@ -4,9 +4,13 @@ import { getProductos } from '../Services/get';
 import React, { useState, useEffect } from 'react';
 // import "../Styles/CardAdornos.css"
 
+
+
 function CardAdornos() {
   const [productos, setProductos] = useState([]);
 
+
+    //useEffect se utiliza aquí para realizar una acción cuando el componente se monta. 
   useEffect(() => {
     async function fetchProductos() {
       try {

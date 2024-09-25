@@ -22,16 +22,14 @@ function CardDecoracion() {
   return (
     <div className="d-flex flex-wrap justify-content-center">
       {productos.map(producto => (
-        <Card key={producto.id} id={`card-adorno-${producto.id}`} className="card-custom">
+       <Card key={producto.id} id={`card-adorno-${producto.id}`} className="card-custom"
+          style={{ boxShadow: "0 4px 22px rgba(0, 0, 0, 0.2)" }}>
           <Card.Img className="card-img-custom" variant="top" src={producto.imagen} />
           <Card.Body>
-            <Card.Title>{producto.nombre}</Card.Title>
-            <Card.Text>
-              {producto.descripcion}
-            </Card.Text>
- 
-          </Card.Body>
-        </Card>
+         <Card.Title>{producto.nombre}</Card.Title>
+         <Card.Text>{producto.descripcion}</Card.Text>
+       </Card.Body>
+     </Card>
       ))}
     </div>
   );

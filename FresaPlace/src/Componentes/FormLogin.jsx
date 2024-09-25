@@ -100,7 +100,7 @@ function FormLogin() {
   };
 
   return (
-    <MDBContainer className="my-5 gradient-form">
+    <MDBContainer id='fondo12' className="my-5 gradient-form">
       <MDBRow>
         <MDBCol col='6' className="mb-5">
           <div className="d-flex flex-column ms-5">

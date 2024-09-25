@@ -1,3 +1,17 @@
+button {
+  background-color: #eb0ba0; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  margin: 5px 0; /* Espaciado entre botones */
+}
+
+button:hover {
+  background-color: #d80070; /* Color más oscuro al hacer hover */
+}
 
 
 .carrusel-productos {
@@ -13,19 +27,24 @@
     text-align: center;
     padding: 10px;
     cursor: pointer;
+    height: 550px; /* Ajusta la altura como desees */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que los elementos se distribuyan uniformemente */
   }
   
-  .producto-item img {
+  .producto-imagen {
     width: 100%;
-    max-width: 200px;
-    height: auto;
+    max-width: 100%; 
+    max-height: 320px; 
+    object-fit: cover; 
     border-radius: 10px;
-    transition: transform 0.3s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  }
   
-    
+  .producto-item h3,
+  .producto-item p {
+    margin: 10px 0; 
+    color: #eb0ba0; 
   }
   
   .producto-item:hover img {

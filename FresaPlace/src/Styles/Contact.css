@@ -1,73 +1,58 @@
+.containerContact {
+  background-color: #f0f8ff; /* Fondo suave */
+  padding: 30px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 600px; /* Ancho máximo */
+  margin: 50px auto; /* Centrado */
+  background-image: url("../IMG/fondoContact.jpg");
+}
 
-  
-  .contact-form-containerContact {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    margin-top: 4rem;
-    margin-left: 28rem;
-    margin-bottom: 4rem;
-  }
-  
-  #tituloContact {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+#formContact6{
+    background: rgba(204, 147, 182, 0.5); /* Blanco con 50% de opacidad */
+    border: none; /* Opcional: para quitar el borde */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    border-radius: 5px; /* Opcional: para bordes redondeados */
+  box-shadow:
+  inset 0 -3em 3em rgba(231, 36, 182, 0.3),
+  0 0 0 2px turquoise,
+  0.3em 0.3em 1em rgba(230, 225, 221, 0.683);
+  backdrop-filter: blur(10px);
+}
 
-  
-  #labelContact {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-#nameContact{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.form-control {
+  border-radius: 5px; /* Bordes redondeados */
+  border: 2px solid #eb0ba0; /* Bordes rosados */
+  transition: border-color 0.3s; /* Transición suave */
+
+}
+
+.form-control:focus {
+  border-color: #00bfff; /* Bordes turquesas al enfocarse */
+  box-shadow: 0 0 5px rgba(0, 191, 255, 0.5); /* Sombra al enfocarse */
+}
+
+textarea {
+  resize: none; /* Evita que se redimensione */
+}
+
+.btn-info {
+  background-color: #eb0ba0; /* Fondo rosado */
+  color: white; /* Color del texto */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn-info:hover {
+  background-color: #ffcc99; /* Color naranja pastel al hacer hover */
 }
 
 
+      
+#textoContactenos{
 
-#emailContact{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  color: #976085;
+  background-color: #e09bc9;
 }
-
-
-#messageContact{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #1a9cad;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  

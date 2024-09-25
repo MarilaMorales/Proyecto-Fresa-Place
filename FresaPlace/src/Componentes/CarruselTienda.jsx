@@ -4,14 +4,13 @@ import Slider from "react-slick";
 import React from "react";
 import "../Styles/CarruselTienda.css"
 
-
-const CarruselProductos = ({ productos, abrirModal, Cart }) => {
+const CarruselProductos = ({ productos, abrirModal }) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,  // Mostrar 3 productos a la vez
-    slidesToScroll: 1, // Desplazar 1 producto por vez
+    slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -38,14 +37,17 @@ const CarruselProductos = ({ productos, abrirModal, Cart }) => {
             <img src={producto.imagen} alt={producto.nombre} className="producto-imagen" />
             <h3>{producto.nombre}</h3>
             <p>{producto.precio} Colones</p>
-            <div onClick={() => abrirModal(producto)}>View Details</div>
+            <button id={`agregar-${producto.id}`} onClick={producto.agregar}>
+              Agregar al Carrito
+            </button>
+            <button id={`verDetalles-${producto.id}`} onClick={() => abrirModal(producto)}>
+              Ver Detalles
+            </button>
           </div>
         ))}
       </Slider>
     </div>
   );
 };
-
-
 
 export default CarruselProductos;

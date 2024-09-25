@@ -9,3 +9,37 @@
     border-radius: 5px;
 }
 
+/* Asegúrate de que todo el contenedor cubra el 100% del ancho y alto */
+.imageAboutUs {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Para que cubra toda la altura de la ventana */
+    background-image: url('../IMG/aboutUs.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  
+  /* Este es el filtro oscuro sobre la imagen */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Filtro oscuro con transparencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    z-index: 1;
+  }
+  
