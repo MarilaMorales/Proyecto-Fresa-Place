@@ -95,7 +95,7 @@ function FormRegistro() {
             <MDBCardBody className='p-5 shadow-5 text-center'>
               <h2 id='TextRegistro5' className="fw-bold mb-5">Sign up now</h2>
 
-              <form onSubmit={guardarUser}>
+              <form id='formlogin54' onSubmit={guardarUser}>
                 <MDBRow>
                   <MDBCol md='8'>
                     <MDBInput

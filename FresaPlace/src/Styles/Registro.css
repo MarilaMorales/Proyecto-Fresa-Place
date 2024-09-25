@@ -1,10 +1,15 @@
-#fondoLogin2{
+#fondoRegistro2{
   background-color: #E94F88;
 }
 
 #TextRegistro5{
   color: #E94F88;
 }
+
+#formlogin54{
+
+}
+
 
 
 #btnRegistro1{
@@ -15,16 +20,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+
   backdrop-filter: blur(10px);
   padding: 20px;
   border-radius: 10px;
-  background-image: url("../IMG/fondoLogin3.jpg");
+  background-image: url("../IMG/fondologin.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   backdrop-filter: blur(10px);
+
 
 }
 

@@ -1,36 +1,76 @@
-#fondo12{
+#fondo12 {
   background-image: url("../IMG/fondoLogin3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   backdrop-filter: blur(10px);
-
 }
 
-
 #logoLogin {
-  height: 25rem; /* Tamaño ajustado */
-  width: 25rem; /* Tamaño ajustado */
+  height: auto; /* Ajustar automáticamente */
+  max-width: 150px; /* Tamaño máximo */
 }
 
 #mensajeAlert {
   color: red;
   font-size: 1rem;
   font-weight: 700;
-  width: 55%;
-  padding-left: 0.5rem;
-  margin-left: 8rem;
+  width: 80%;
+  margin: 0 auto; /* Centrado */
 }
 
 #TextoLogin {
   color: #E94F88;
-  text-align: center; /* Centrado */
-  width: 100%; /* Asegura que ocupe todo el ancho */
+  text-align: center;
 }
 
-.d-flex.flex-column.justify-content-center.gradient-custom-2 {
-  height: auto; /* Permite que el contenedor crezca según el contenido */
+.gradient-custom-2 {
+  background: linear-gradient(45deg, #E94F88, #f59862); /* Gradiente colorido */
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+}
+
+
+
+
+/* Aumentar el ancho del formulario */
+#login-form {
+  max-width: 500px; /* Ancho máximo del formulario */
+  width: 100%; /* Ocupar todo el ancho disponible */
+  margin: 0 auto; /* Centrar el formulario */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+
+  #logoLogin {
+    height: auto;
+    max-width: 200px; /* Ajustar para pantallas más grandes */
+  }
+
+  #mensajeAlert {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  #fondo12 {
+    background-attachment: scroll; /* Para móviles */
+  }
+
+  #mensajeAlert {
+    width: 90%;
+  }
+
+  #login-form {
+    max-width: 90%; /* Ajustar para móviles */
+  }
 }
 
 
@@ -40,14 +80,30 @@
 
 
 
-  @media (min-width: 768px) {
-    .gradient-form {
-      height: 100vh !important;
-    }
-  }
-  @media (min-width: 769px) {
-    .gradient-custom-2 {
-      border-top-right-radius: .3rem;
-      border-bottom-right-radius: .3rem;
-    }
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#loginTrans{
+  background: rgba(204, 147, 182, 0.5);
+}
+
+
+
+
+
+
+
+
+
