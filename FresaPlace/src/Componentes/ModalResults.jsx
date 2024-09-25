@@ -12,7 +12,7 @@ const ModalResults = ({ show, handleClose, results }) => {
                 {results.length > 0 ? (
                     results.map((producto) => (
                         <Card key={producto.id} style={{ marginBottom: '10px' }}>
-                            <Card.Img variant="top" src={producto.imagen} /> {/* Asegúrate de que 'imagen' esté definido */}
+                            <Card.Img variant="top" src={producto.imagen} /> 
                             <Card.Body>
                                 <Card.Title>{producto.nombre}</Card.Title>
                                 <Card.Text>{producto.descripcion}</Card.Text>

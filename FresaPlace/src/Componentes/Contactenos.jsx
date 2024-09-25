@@ -3,6 +3,9 @@ import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 import "../Styles/Contact.css"
 
+
+
+
 const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,6 +16,7 @@ const ContactForm = () => {
           toast.success('Message sent successfully!');
       }, (error) => {
           console.log('Error:', error.text);
+          
           toast.error('Failed to send message. Please try again later.');
       });
     e.target.reset();
@@ -20,6 +24,9 @@ const ContactForm = () => {
 
   return (
     <div className="containerContact">
+      <div>
+        <h2 id='TextoContact'>Contactenos</h2>
+      </div>
 
       <form id='formContact6' onSubmit={sendEmail}>
         <div className="row pt-5 mx-auto">

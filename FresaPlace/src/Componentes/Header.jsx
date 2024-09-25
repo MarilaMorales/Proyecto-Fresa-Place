@@ -49,7 +49,7 @@ const Header = () => {
                 <img src={LogoTransparente} alt="Logo" />
             </div>
             <nav className="navHeader">
-                {/* Info Extra */}
+      
             </nav>
             <SearchBar onSearch={Busqueda} />
             <ModalREsults 
@@ -70,24 +70,3 @@ export default Header;
 
 
 
-
-
-
-// import React from 'react';
-// import "../Styles/Header.css";
-// import Logo from "../IMG/Logo.png"
-
-// const Header = () => {
-//   return (
-//     <header className="containerHeader">
-//       <div className="logoHeader">
-//         <img src={Logo} alt="Logo"/>
-//       </div>
-//       <nav className="navHeader">
-//         {/*Enlaces de navegación si los necesitas */}
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default Header;

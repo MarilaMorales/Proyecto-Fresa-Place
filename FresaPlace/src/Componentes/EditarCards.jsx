@@ -37,10 +37,12 @@ const EditarProductos = () => {
         setShowModal(true);
     };
 
+    
     const cerrarModal = () => {
         setShowModal(false);
         setupdateProducto(null);
     };
+
 
     const guardarCambios = async (productoActualizado) => {
         try {
@@ -54,7 +56,17 @@ const EditarProductos = () => {
         }
     };
 
+
+
+
+
+
+
+
+
+
     return (
+
         <div className="containerEditar mt-4">
             <div className="cards-container">
                 {productos.map(producto => (

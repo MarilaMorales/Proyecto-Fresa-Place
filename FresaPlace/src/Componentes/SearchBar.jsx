@@ -25,7 +25,7 @@ const SearchBar = ({ onSearch }) => {
             />
             <button
                 onClick={busqProductos}
-                className="buttonSearch" // Clase para el botón
+                className="buttonSearch" 
             >
                 Buscar
             </button>
