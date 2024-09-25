@@ -1,0 +1,49 @@
+#card-descuentos {
+    margin: 2rem auto; /* Espaciado alrededor del contenedor de cards */
+  }
+  
+  .card-item {
+    width: 18rem; /* Ancho de cada card */
+    margin: 1rem; /* Margen alrededor de las cards */
+    transition: transform 0.2s, box-shadow 0.2s; 
+    border-radius: 10px; /* Esquinas redondeadas */
+   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .card-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+  }
+  
+  .card-item img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    
+    transition: transform 0.3s; /* Suaviza el efecto de aumento */
+  }
+  
+  .card-item:hover img {
+    transform: scale(1.1); /* Aumenta la imagen al pasar el mouse */
+  }
+  
+  .card-title {
+    font-weight: bold; /* Negrita para el título */
+    color: rgb(50, 50, 50); /* Color del título */
+  }
+  
+  .card-text {
+    color: rgb(100, 100, 100); /* Color de la descripción */
+  }
+  
+  .btn-primary {
+    background-color: rgb(98, 224, 214); /* Color personalizado */
+    border: none; /* Sin borde */
+  }
+  
+  .btn-primary:hover {
+    background-color: rgb(70, 200, 200); /* Color al pasar el mouse */
+  }
+  
+  
+  

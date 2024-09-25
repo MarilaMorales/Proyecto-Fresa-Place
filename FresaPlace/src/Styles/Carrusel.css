@@ -1,25 +1,112 @@
-#carrusel-principal {
-  height: 500px; /* Cambia este valor según sea necesario */
+.carrusel-container {
+  width: 90%;
+  margin: 4rem auto 12rem auto; /* Espaciado superior e inferior */
+  margin-top: 12rem;
+}
 
+.slide {
+  position: relative; /* Permite posicionar el texto dentro de este div */
+}
+
+.carrusel-container img {
+  width: 100%; /* Asegúrate de que la imagen ocupe el contenedor */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.textoCarrusel {
+  text-align: center;
+  color: rgb(98, 224, 214);
+  background-color: rgba(137, 43, 226, 0.6); /* Fondo */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+  position: absolute; /* Para superponer el texto */
+  bottom: 20px; /* Ajustar según sea necesario */
+  left: 50%;
+  transform: translateX(-50%); /* Centrar horizontalmente */
+  margin-top: 2rem;
+}
+
+
+#DestacadoTexto{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  height: 6rem;
+  width: 50%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #carrusel-principal {
+  height: 500px; 
   margin-top: 4rem;
   margin-bottom: 12rem;
   width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
+  border-radius: 10px; 
+  overflow: hidden; 
 }
 
 #carrusel-principal img {
-  height: 100%; /* Asegura que la imagen ocupe toda la altura */
+  height: 100%;
   object-fit: cover;
-  margin-bottom: 1.5rem;
+  transition: transform 0.5s ease; 
 }
 
-
-#textoCarrusel{
-color: rgb(98, 224, 214);
-background-color: rgba(137, 43, 226, 0.349);
-width: 100%;
-
+#carrusel-principal img:hover {
+  transform: scale(1.05); 
 }
+
+#textoCarrusel {
+  color: rgb(98, 224, 214);
+  background-color: rgba(137, 43, 226, 0.6); 
+  padding: 10px; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; 
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); 
+} */

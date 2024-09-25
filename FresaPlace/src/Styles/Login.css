@@ -1,29 +1,34 @@
+#logoLogin {
+  height: 25rem; /* Tamaño ajustado */
+  width: 25rem; /* Tamaño ajustado */
+}
+
+#mensajeAlert {
+  color: red;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 55%;
+  padding-left: 0.5rem;
+  margin-left: 8rem;
+}
+
+#TextoLogin {
+  color: #E94F88;
+  text-align: center; /* Centrado */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.d-flex.flex-column.justify-content-center.gradient-custom-2 {
+  height: auto; /* Permite que el contenedor crezca según el contenido */
+}
 
 
-.gradient-custom-2 {
-    /* fallback for old browsers */
-    background: #fccb90;
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, #FFB6A0, #F172A1, #E94F88, #FF6437);
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, #FFB6A0, #F172A1, #E94F88, #FF6437);
-  }
 
-  #mensajeAlert{
-    color: red;
-    font-size: 1rem;
 
-    font-weight: 700;
-    width: 55%;
-    padding-left: 0.5rem;
-    margin-left: 8rem;
-  }
 
-  #TextoLogin{
-    color: #E94F88;
-  }
+
+
+
   @media (min-width: 768px) {
     .gradient-form {
       height: 100vh !important;

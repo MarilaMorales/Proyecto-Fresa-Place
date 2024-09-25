@@ -3,15 +3,16 @@
     padding: 0;
 } 
 
-  
-  .containerHeader {
+
+
+.containerHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(90deg, #e94f88,#e94f88,#f3a188);
     
-  }
-  
+  } 
+
   .logoHeader img {
     height: 11rem; 
     margin: 0px;

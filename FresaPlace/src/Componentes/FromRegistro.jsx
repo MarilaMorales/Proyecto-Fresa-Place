@@ -87,16 +87,13 @@ function FormRegistro() {
 
 
 
-
-
-
   return (
-    <MDBContainer fluid className='my-5'>
+    <MDBContainer id='fondoRegistro2' fluid className='my-5'>
       <MDBRow className='g-0 justify-content-center'>
         <MDBCol md='11'>
           <MDBCard className='my-5' style={{background: 'hsla(0, 0%, 100%, 0.55)', backdropFilter: 'blur(30px)'}}>
             <MDBCardBody className='p-5 shadow-5 text-center'>
-              <h2 className="fw-bold mb-5">Sign up now</h2>
+              <h2 id='TextRegistro5' className="fw-bold mb-5">Sign up now</h2>
 
               <form onSubmit={guardarUser}>
                 <MDBRow>
@@ -144,9 +141,7 @@ function FormRegistro() {
                   required
                 />
 
-   
-
-                <MDBBtn className='w-100 mb-4' size='md' type='submit'>
+                <MDBBtn id='btnRegistro1' className='w-100 mb-4' size='md' type='submit'>
                   Sign up
                 </MDBBtn>
 

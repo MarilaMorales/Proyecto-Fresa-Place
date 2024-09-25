@@ -5,11 +5,11 @@
   color: rgb(145, 29, 180);
   text-align: center;
   padding: 20px;
-  position: relative; /* Añadido para el borde */
+  position: relative; 
   height: 12rem;
   margin-top: 4rem;
   
-}
+} 
 
 .footer::before {
   content: "";
@@ -54,10 +54,8 @@
     position: absolute; 
     right: 20px; 
     bottom: 10px;
-    height: 12rem; 
-    /* background-image: url("../IMG/FooterLogoTrans.png");
-    background-repeat: no-repeat;
-    background-position: center center; */
+    height: 11rem; 
+    margin-top: 12px;
 
 
   }

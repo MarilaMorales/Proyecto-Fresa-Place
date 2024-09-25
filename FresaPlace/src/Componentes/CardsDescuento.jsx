@@ -2,12 +2,11 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { getProductos } from '../Services/get';
 import React, { useState, useEffect } from 'react';
+import "../Styles/Descuento.css"
 
 
 function CardDescuentos() {
   const [productos, setProductos] = useState([]);
-
-
 
   useEffect(() => {
     async function fetchProductos() {
@@ -25,20 +24,16 @@ function CardDescuentos() {
     fetchProductos();
   }, []);
 
-
-
-  // Itera sobre cada elemento en productos y crea un card con la info del db.json
   return (
-    <div className="d-flex flex-wrap">
+    <div className="d-flex flex-wrap" id="card-descuentos">
       {productos.map(producto => (
-        <Card key={producto.id} style={{ width: '18rem', margin: '1rem' }}>
+        <Card key={producto.id} className="card-item">
           <Card.Img variant="top" src={producto.imagen} />
           <Card.Body>
             <Card.Title>{producto.nombre}</Card.Title>
             <Card.Text>
               {producto.descripcion}
             </Card.Text>
-            <Button variant="primary">Más info</Button>
           </Card.Body>
         </Card>
       ))}
