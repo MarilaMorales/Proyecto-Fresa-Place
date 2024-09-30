@@ -23,7 +23,7 @@ const CotizacionForm = () => {
 
       const templateParams = {
         to_name: "Cliente", 
-        from_name: "Tu Nombre", 
+        from_name: "Fresa Place", 
         message: `Tamaño de piñata: ${tamañoPiñata}\nBolsitas: ${bolsitas}\nTipo de bolsitas: ${tipoBolsitas}\nMural: ${mural}\nDecoración: ${decoracion}\nEmail: ${email}`, // Incluimos el email
       };
 

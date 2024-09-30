@@ -39,6 +39,8 @@ function FormLogin() {
     fetchAdmins();
   }, []);
 
+
+  
   const Login = async () => {
     setMessage('');
     if (!email || !password) {
@@ -50,10 +52,11 @@ function FormLogin() {
       const admin = admins.find(a => a.email === email);
       if (admin && admin.password === password) {
         localStorage.setItem("Autentificado", "true");
-        toast.success("¡Éxito! Administrador entrando.");
+        toast.success("¡Bienvenido Administrador!");
         navigate("/Administracion");
         return;
       }
+
 
       const user = users.find(u => {
         if (u.nombre && typeof u.nombre === 'object') {
@@ -64,7 +67,7 @@ function FormLogin() {
 
       if (user) {
         localStorage.setItem("Autentificado", "true");
-        toast.success('¡Éxito! Usuario entrando.');
+        toast.success("¡Usuario entrando a la Pagina!");
         navigate("/Principal");
       } else {
         setMessage('Este usuario no existe.');
@@ -85,7 +88,7 @@ function FormLogin() {
   return (
     <MDBContainer id='fondo12' className="my-5 gradient-form">
     <MDBRow>
-      <MDBCol col='12' md='6' className="mb-5"> {/* Cambiamos col='6' a col='12' para pantallas pequeñas */}
+      <MDBCol col='12' md='6' className="mb-5"> 
         <div id="login-form" className="d-flex flex-column mx-auto" style={{ maxWidth: "500px" }}>
           {message && <div id="mensajeAlert">{message}</div>}
           <h4 id='TextoLogin' className="mt-1 mb-5 pb-1">LOGIN</h4>
