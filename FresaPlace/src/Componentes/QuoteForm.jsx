@@ -10,10 +10,11 @@ const CotizacionForm = () => {
   const [tipoBolsitas, setTipoBolsitas] = useState('');
   const [mural, setMural] = useState('');
   const [decoracion, setDecoracion] = useState('');
+  const [email, setEmail] = useState(''); // Nuevo estado para el email
 
   const enviarQuote = async (e) => {
     e.preventDefault();
-    const cotizacion = { tamañoPiñata, bolsitas, tipoBolsitas, mural, decoracion };
+    const cotizacion = { tamañoPiñata, bolsitas, tipoBolsitas, mural, decoracion, email }; // Agregamos el email
 
     try {
       const result = await postQuotes(cotizacion);
@@ -23,7 +24,7 @@ const CotizacionForm = () => {
       const templateParams = {
         to_name: "Cliente", 
         from_name: "Tu Nombre", 
-        message: `Tamaño de piñata: ${tamañoPiñata}\nBolsitas: ${bolsitas}\nTipo de bolsitas: ${tipoBolsitas}\nMural: ${mural}\nDecoración: ${decoracion}`,
+        message: `Tamaño de piñata: ${tamañoPiñata}\nBolsitas: ${bolsitas}\nTipo de bolsitas: ${tipoBolsitas}\nMural: ${mural}\nDecoración: ${decoracion}\nEmail: ${email}`, // Incluimos el email
       };
 
       await emailjs.send("service_56xi5wh", "template_hj0ofgb", templateParams, "rV7wVdf0tWzRA66hT");
@@ -38,6 +39,20 @@ const CotizacionForm = () => {
   return (
     <form className="containerQuote" onSubmit={enviarQuote}>
       <h2 id='CotizacionText'>Cotización</h2>
+
+      <section>
+        <h3>Datos de Contacto</h3>
+        <label id='labelQuote' htmlFor="email">
+          Correo Electrónico:
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required 
+          />
+        </label>
+      </section>
 
       <section>
         <h3>Piñata</h3>

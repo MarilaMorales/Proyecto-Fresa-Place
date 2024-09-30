@@ -32,15 +32,24 @@ select {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #da21a2; /* Color verde */
-    color: white; /* Texto blanco */
+    background-color: #da21a2; 
+    color: white; 
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem; /* Tamaño del texto */
-    cursor: pointer; /* Cursor tipo puntero */
-    transition: background-color 0.3s; /* Transición de fondo */
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #d445c1; /* Color más oscuro al pasar el mouse */
+}
+
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #6c757d;
+    border-radius: 5px;
+    margin-top: 5px;
 }
