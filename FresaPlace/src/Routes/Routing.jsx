@@ -41,8 +41,6 @@ const Routing = () => {
        <Route path="/Contactenos" element={<Contactenos />} />
        <Route path="/AboutUs" element={<AboutUs />} />
        <Route path="/Tienda" element={<Tienda />} />
-       {/* <Route path="/Administracion" element={<Administracion />} />
-       <Route path="/AgregarAdministradores" element={<AgregarAdministradores />} /> */}
        <Route path="/AgregarAdministradores" element={<Protect><AgregarAdministradores /></Protect>}/>
        <Route path="/Administracion" element={<Protect><Administracion/></Protect>}/>
        <Route path="/EditarCards" element={<Protect><EditarCards /></Protect>}/>

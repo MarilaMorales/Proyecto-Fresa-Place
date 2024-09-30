@@ -35,6 +35,7 @@ function CardFiestas() {
           <Card.Img variant="top" src={producto.imagen} />
           <Card.Body>
             <Card.Title>{producto.nombre}</Card.Title>
+           
             <Card.Text>
               {producto.descripcion}
             </Card.Text>

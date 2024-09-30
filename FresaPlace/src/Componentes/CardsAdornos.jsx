@@ -31,6 +31,7 @@ function CardAdornos() {
           <Card.Img className="card-img-custom" variant="top" src={producto.imagen} />
           <Card.Body>
             <Card.Title>{producto.nombre}</Card.Title>
+            <Card.Title> Precio: {producto.precio} colones</Card.Title>
             <Card.Text>
               {producto.descripcion}
             </Card.Text>

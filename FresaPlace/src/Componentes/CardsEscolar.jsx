@@ -28,8 +28,9 @@ function CardEscolar() {
             <Card.Title>{producto.nombre}</Card.Title>
             <Card.Text>
               {producto.descripcion}
+
             </Card.Text>
- 
+  <Card.Title> Precio: {producto.precio} colones</Card.Title>
           </Card.Body>
         </Card>
       ))}
